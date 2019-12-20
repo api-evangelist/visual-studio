@@ -1,0 +1,798 @@
+{
+    "id": "3cf0a98b1aea41e93b62b12fcf66e767",
+    "name": "ServiceHooks",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "74983b930e19993a0532fa5178d8f544",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/consumers\/{consumerId}\/actions\/{consumerActionId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "consumerId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "consumerActionId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "publisherId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "f8e237d87c61e36789ed6985829133ed",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/consumers\/{consumerId}\/actions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "consumerId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "publisherId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "0d1fc233a3d30814a238606fcd2cd565",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/consumers\/{consumerId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "consumerId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "publisherId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "3143de5882e95df819cecfd0c2e0aa78",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/consumers",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "publisherId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "c5a27a6dd3d7308626c8637d6c7f356b",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/publishers\/{publisherId}\/eventtypes\/{eventTypeId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "publisherId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "eventTypeId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "37ea468ddd996c5bf4f6c16d54a357e7",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/publishers\/{publisherId}\/eventtypes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "publisherId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "07377df60359016a199e8ee187350304",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/public\/hooks\/externalevents",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "publisherId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "channelId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "5f9887dc3d87fa30cdca2562d8dcfb95",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/subscriptions\/{subscriptionId}\/notifications\/{notificationId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "subscriptionId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "notificationId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "1b2138e513fc0eab4b31208b7d85c9b5",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/subscriptions\/{subscriptionId}\/notifications",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "subscriptionId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxResults",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "result",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "79cbca5c5606946fd39688eab0e2adf1",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/notificationsquery",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "ad2855bb5e9cb50991580460fafa00e4",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/publishers\/{publisherId}\/inputValuesQuery",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "publisherId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "a20905441af48ee160e65f5e394a9bd5",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/publishers\/{publisherId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "publisherId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "d01619d9ea941514968a57e3575d0f41",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/publishers",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "b916070128652c4a0df25a8f4e49c23e",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/publishersquery",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "76c904f2142f932b97e81c82d9c55282",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/subscriptions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "22019860534d9d56a43463980a9e102f",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/subscriptions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "publisherId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "eventType",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "consumerId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "consumerActionId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "cb6e57a1050ccba214193559bd2530b1",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/subscriptions\/{subscriptionId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "subscriptionId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "95e5c98563d5b49598e67a01c1e7e3a5",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/subscriptions\/{subscriptionId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "subscriptionId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        },
+        {
+            "id": "40d42614c2b72d940c7f95e110a103f8",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/hooks\/subscriptions\/{subscriptionId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "subscriptionId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3cf0a98b1aea41e93b62b12fcf66e767",
+            "rawModeData": ""
+        }
+    ]
+}
