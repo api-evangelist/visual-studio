@@ -1,0 +1,1225 @@
+{
+    "id": "56aaa714ecbfc033afb657e3cf0187a2",
+    "name": "Work",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "ada2f24f074a9f673973a61dc357941b",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/backlogconfiguration",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "b5e2b29d21d3551136eeb9a2d6c7d0f3",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/boardcolumns",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "d5edb654d88a0a36d94e5a274cc6cd96",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{board}\/boardfiltersettings",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "61950d60cf49309a0cae78588cf3b12b",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/boardrows",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "59be313932c25c00463cfa442d70f7f0",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{id}",
+            "description": "Get board",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "177fcc7ea58386086ab21e16d024aa7c",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards",
+            "description": "Get boards",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "4364292be5733768758be70b63267887",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{board}\/boardusersettings",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "ca9eacefbb0e0f8a0594bd97acc6b40d",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations\/{iterationId}\/capacities",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "iterationId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "861aa3282abb800b66ed4c83dc15eb69",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{board}\/cardrulesettings",
+            "description": "Get board card Rule settings for the board id or board by name",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "3ea1cb9cde13363eff5799052449af3a",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{board}\/cardsettings",
+            "description": "Get board card settings for the board id or board by name",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "c788b6a0835dc6c6357f074dfb932c06",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "e59556f283b2a0211b2ec461f60c8f90",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "5b869d39c2e208596703226376afb98a",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeframe",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "7d74522c35a1563169c7973dac15e949",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "f25ef4fa7a0084e87d798726b0616a08",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/plans",
+            "description": "Add a new plan for the team",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "fc8e9492e534823a0fbe2b01392e502d",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/plans",
+            "description": "Get the information for all the plans configured for the given team",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "f5c4e324c425ed9fdbc73b47c1a3b38a",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/plans\/{id}",
+            "description": "Delete the specified plan",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "90da6f2107abc327a84d9642f7e6eb51",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/plans\/{id}",
+            "description": "Get the information for the specified plan",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "e99b31c7ecdd95d490eb180639b1a78a",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/plans\/{id}",
+            "description": "Update the information for the specified plan",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "4cd1cfd23aea1b2d6c8da71a4bcf01c9",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/processconfiguration",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "308365ce4f1aa5f0bfc483678be13927",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{board}\/rows",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "21b123a96c3aafeb9b60725b3fcb40f2",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations\/{iterationId}\/teamdaysoff",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "iterationId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "26d5b614cee4b1cc0d2d56fb947bdc35",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/teamfieldvalues",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "c88dd2cb6bbf44e129793cf7dcc2178f",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/teamfieldvalues",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "73c70c016208d463eac558ee9268d2f0",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "4bd0f45763904d1edb3a04d454e167e2",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "team",
+                    "description": "Team ID or team name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "rawModeData": ""
+        }
+    ]
+}
