@@ -1,0 +1,463 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "4.1",
+        "title": "Policy",
+        "description": "",
+        "termsOfService": "https:\/\/go.microsoft.com\/fwlink\/?LinkId=329770"
+    },
+    "servers": [
+        "http:\/\/fabrikam-fiber-inc.visualstudio.com\/"
+    ],
+    "paths": {
+        "\/{project}\/_apis\/policy\/evaluations\/{evaluationId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EvaluationsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "evaluationId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PolicyEvaluationRecord"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "summary": "",
+                "description": "",
+                "operationId": "EvaluationsRequeuePolicyEvaluation",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "evaluationId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PolicyEvaluationRecord"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/policy\/evaluations": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EvaluationsList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "artifactId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "includeNotApplicable",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "top",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "skip",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PolicyEvaluationRecord"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/policy\/types\/{typeId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "TypesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "typeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PolicyEvaluationRecord"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/policy\/types": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "TypesList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PolicyEvaluationRecord"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "IdentityRef": {
+                "type": "object",
+                "properties": {
+                    "directoryAlias": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "imageUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "inactive": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isAadIdentity": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isContainer": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "profileUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uniqueName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "JObject": {
+                "type": "object",
+                "properties": {
+                    "item": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "PolicyConfiguration": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "createdDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "isBlocking": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isDeleted": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isEnabled": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "JObject": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "settings": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    }
+                }
+            },
+            "_links": {
+                "type": "object"
+            },
+            "PolicyConfigurationRef": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "PolicyTypeRef": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "type": {
+                "type": "object"
+            },
+            "PolicyEvaluationRecord": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "artifactId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "completedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "PolicyConfiguration": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "configuration": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "JObject": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "context": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "evaluationId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "startedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    }
+                }
+            },
+            "PolicyType": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    }
+                }
+            },
+            "PolicyTypeRef": {
+                "type": "object",
+                "properties": {
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ReferenceLinks": {
+                "type": "object",
+                "properties": {
+                    "links": {
+                        "description": "The readonly view of the links.  Because Reference links are readonly, we only want to expose them as read only.",
+                        "type": "object"
+                    }
+                }
+            },
+            "links": {
+                "type": "object"
+            },
+            "VersionedPolicyConfigurationRef": {
+                "type": "object",
+                "properties": {
+                    "revision": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "VssJsonCollectionWrapper": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "VssJsonCollectionWrapperBase": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    }
+}
