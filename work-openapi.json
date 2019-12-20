@@ -1,0 +1,2562 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "4.1",
+        "title": "Work",
+        "description": "",
+        "termsOfService": "https:\/\/go.microsoft.com\/fwlink\/?LinkId=329770"
+    },
+    "servers": [
+        "http:\/\/fabrikam-fiber-inc.visualstudio.com\/"
+    ],
+    "paths": {
+        "\/{project}\/{team}\/_apis\/work\/backlogconfiguration": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "BacklogconfigurationGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/work\/boardcolumns": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "BoardcolumnsList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/boards\/{board}\/boardfiltersettings": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "BoardfiltersettingsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "board",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/work\/boardrows": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "BoardrowsList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/boards\/{id}": {
+            "get": {
+                "summary": "",
+                "description": "Get board",
+                "operationId": "BoardsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id"
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/boards": {
+            "get": {
+                "summary": "",
+                "description": "Get boards",
+                "operationId": "BoardsList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/boards\/{board}\/boardusersettings": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "BoardusersettingsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "board",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations\/{iterationId}\/capacities": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "CapacitiesList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "iterationId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/boards\/{board}\/cardrulesettings": {
+            "get": {
+                "summary": "",
+                "description": "Get board card Rule settings for the board id or board by name",
+                "operationId": "CardrulesettingsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "board",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/boards\/{board}\/cardsettings": {
+            "get": {
+                "summary": "",
+                "description": "Get board card settings for the board id or board by name",
+                "operationId": "CardsettingsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "board",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations\/{id}": {
+            "delete": {
+                "summary": "",
+                "description": "",
+                "operationId": "IterationsDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id"
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "IterationsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id"
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "IterationsList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "timeframe",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "",
+                "description": "",
+                "operationId": "IterationsPostTeamIteration",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/work\/plans": {
+            "post": {
+                "summary": "",
+                "description": "Add a new plan for the team",
+                "operationId": "PlansCreate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "",
+                "description": "Get the information for all the plans configured for the given team",
+                "operationId": "PlansList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/work\/plans\/{id}": {
+            "delete": {
+                "summary": "",
+                "description": "Delete the specified plan",
+                "operationId": "PlansDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "",
+                "description": "Get the information for the specified plan",
+                "operationId": "PlansGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "",
+                "description": "Update the information for the specified plan",
+                "operationId": "PlansUpdate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "identifier for board, either board's backlog level name (Eg:\"Stories\") or Id"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/work\/processconfiguration": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "ProcessconfigurationGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/boards\/{board}\/rows": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "RowsList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "board",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations\/{iterationId}\/teamdaysoff": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "TeamdaysoffGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "iterationId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/teamsettings\/teamfieldvalues": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "TeamfieldvaluesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "summary": "",
+                "description": "",
+                "operationId": "TeamfieldvaluesUpdate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/{team}\/_apis\/work\/teamsettings": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "TeamsettingsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "summary": "",
+                "description": "",
+                "operationId": "TeamsettingsUpdate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "team",
+                        "in": "path",
+                        "description": "Team ID or team name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/BacklogConfiguration"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Activity": {
+                "type": "object",
+                "properties": {
+                    "capacityPerDay": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "attribute": {
+                "type": "object"
+            },
+            "BacklogColumn": {
+                "type": "object",
+                "properties": {
+                    "columnFieldReference": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "width": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "WorkItemFieldReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "columnFieldReference": {
+                "type": "object"
+            },
+            "BacklogConfiguration": {
+                "type": "object",
+                "properties": {
+                    "backlogFields": {
+                        "description": "Behavior\/type field mapping",
+                        "type": ""
+                    },
+                    "bugsBehavior": {
+                        "description": "Bugs behavior",
+                        "type": ""
+                    },
+                    "hiddenBacklogs": {
+                        "description": "Hidden Backlog",
+                        "type": "array"
+                    },
+                    "portfolioBacklogs": {
+                        "description": "Portfolio backlog descriptors",
+                        "type": "array"
+                    },
+                    "requirementBacklog": {
+                        "description": "Requirement backlog",
+                        "type": ""
+                    },
+                    "taskBacklog": {
+                        "description": "Task backlog",
+                        "type": ""
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "workItemTypeMappedStates": {
+                        "description": "Mapped states for work item types",
+                        "type": "array"
+                    },
+                    "BacklogLevelConfiguration": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "backlogFields": {
+                "type": "object",
+                "properties": {
+                    "typeFields": {
+                        "description": "Field Type (e.g. Order, Activity) to Field Reference Name map",
+                        "type": "object"
+                    }
+                }
+            },
+            "hiddenBacklogs": {
+                "type": "array"
+            },
+            "portfolioBacklogs": {
+                "type": "array"
+            },
+            "requirementBacklog": {
+                "type": "object"
+            },
+            "taskBacklog": {
+                "type": "object"
+            },
+            "workItemTypeMappedStates": {
+                "type": "array"
+            },
+            "typeFields": {
+                "type": "object"
+            },
+            "BacklogLevel": {
+                "type": "object",
+                "properties": {
+                    "categoryReferenceName": {
+                        "description": "Reference name of the corresponding WIT category",
+                        "type": "string"
+                    },
+                    "pluralName": {
+                        "description": "Plural name for the backlog level",
+                        "type": "string"
+                    },
+                    "workItemStates": {
+                        "description": "Collection of work item states that are included in the plan. The server will filter to only these work item types.",
+                        "type": "array"
+                    },
+                    "workItemTypes": {
+                        "description": "Collection of valid workitem type names for the given backlog level",
+                        "type": "array"
+                    }
+                }
+            },
+            "workItemStates": {
+                "type": "array"
+            },
+            "workItemTypes": {
+                "type": "array"
+            },
+            "BacklogLevelConfiguration": {
+                "type": "object",
+                "properties": {
+                    "addPanelFields": {
+                        "description": "List of fields to include in Add Panel",
+                        "type": "array"
+                    },
+                    "color": {
+                        "description": "Color for the backlog level",
+                        "type": "string"
+                    },
+                    "columnFields": {
+                        "description": "Default list of columns for the backlog",
+                        "type": "array"
+                    },
+                    "defaultWorkItemType": {
+                        "description": "Defaulst Work Item Type for the backlog",
+                        "type": ""
+                    },
+                    "id": {
+                        "description": "Backlog Id (for Legacy Backlog Level from process config it can be categoryref name)",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "rank": {
+                        "description": "Backlog Rank (Taskbacklog is 0)",
+                        "type": "integer"
+                    },
+                    "workItemCountLimit": {
+                        "description": "Max number of work items to show in the given backlog",
+                        "type": "integer"
+                    },
+                    "workItemTypes": {
+                        "description": "Collection of valid workitem type names for the given backlog level",
+                        "type": "array"
+                    },
+                    "WorkItemTypeReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "addPanelFields": {
+                "type": "array"
+            },
+            "columnFields": {
+                "type": "array"
+            },
+            "defaultWorkItemType": {
+                "type": "object"
+            },
+            "Board": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "allowedMappings": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "canEdit": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "columns": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "fields": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "isValid": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "rows": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    },
+                    "BoardFields": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "_links": {
+                "type": "object"
+            },
+            "allowedMappings": {
+                "type": "object"
+            },
+            "columns": {
+                "type": "array"
+            },
+            "fields": {
+                "type": "object"
+            },
+            "rows": {
+                "type": "array"
+            },
+            "BoardCardRuleSettings": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "rules": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    }
+                }
+            },
+            "rules": {
+                "type": "object"
+            },
+            "BoardCardSettings": {
+                "type": "object",
+                "properties": {
+                    "cards": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "cards": {
+                "type": "object"
+            },
+            "BoardChart": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "settings": {
+                        "description": "The settings for the resource",
+                        "type": "object"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    }
+                }
+            },
+            "settings": {
+                "type": "object"
+            },
+            "BoardChartReference": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "BoardColumn": {
+                "type": "object",
+                "properties": {
+                    "columnType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Backlog Id (for Legacy Backlog Level from process config it can be categoryref name)",
+                        "type": "string"
+                    },
+                    "isSplit": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "itemLimit": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "stateMappings": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "stateMappings": {
+                "type": "object"
+            },
+            "BoardFields": {
+                "type": "object",
+                "properties": {
+                    "columnField": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "doneField": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "rowField": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "FieldReference": {
+                        "description": "An abstracted reference to a field",
+                        "type": "object"
+                    }
+                }
+            },
+            "columnField": {
+                "type": "object"
+            },
+            "doneField": {
+                "type": "object"
+            },
+            "rowField": {
+                "type": "object"
+            },
+            "BoardFilterSettings": {
+                "type": "object",
+                "properties": {
+                    "criteria": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "parentWorkItemIds": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "queryText": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "FilterModel": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "criteria": {
+                "type": "array"
+            },
+            "parentWorkItemIds": {
+                "type": "array"
+            },
+            "BoardReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Backlog Id (for Legacy Backlog Level from process config it can be categoryref name)",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "BoardRow": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Backlog Id (for Legacy Backlog Level from process config it can be categoryref name)",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "BoardSuggestedValue": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "BoardUserSettings": {
+                "type": "object",
+                "properties": {
+                    "autoRefreshState": {
+                        "description": "",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "CapacityPatch": {
+                "type": "object",
+                "properties": {
+                    "activities": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "daysOff": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "activities": {
+                "type": "array"
+            },
+            "daysOff": {
+                "type": "array"
+            },
+            "CardFieldSettings": {
+                "type": "object",
+                "properties": {
+                    "additionalFields": {
+                        "description": "A collection of field information of additional fields on cards. The index in the collection signifies the order of the field among the additional fields. Currently unused. Should be used with User Story 691539: Card setting: additional fields",
+                        "type": "array"
+                    },
+                    "assignedToDisplayFormat": {
+                        "description": "Display format for the assigned to field",
+                        "type": ""
+                    },
+                    "coreFields": {
+                        "description": "A collection of field information of rendered core fields on cards.",
+                        "type": "array"
+                    },
+                    "showAssignedTo": {
+                        "description": "Flag indicating whether to show assigned to field on cards. When true, AssignedToDisplayFormat will determine how the field will be displayed",
+                        "type": "boolean"
+                    },
+                    "showEmptyFields": {
+                        "description": "Flag indicating whether to show empty fields on cards",
+                        "type": "boolean"
+                    },
+                    "showId": {
+                        "description": "Flag indicating whether to show ID on cards",
+                        "type": "boolean"
+                    },
+                    "showState": {
+                        "description": "Flag indicating whether to show state field on cards",
+                        "type": "boolean"
+                    },
+                    "showTags": {
+                        "description": "Flag indicating whether to show tags on cards",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "additionalFields": {
+                "type": "array"
+            },
+            "coreFields": {
+                "type": "array"
+            },
+            "CardSettings": {
+                "type": "object",
+                "properties": {
+                    "CardFieldSettings": {
+                        "description": "Card settings, such as fields and rules",
+                        "type": "object"
+                    },
+                    "fields": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CategoryConfiguration": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "referenceName": {
+                        "description": "Category Reference Name",
+                        "type": "string"
+                    },
+                    "workItemTypes": {
+                        "description": "Collection of valid workitem type names for the given backlog level",
+                        "type": "array"
+                    }
+                }
+            },
+            "CreatePlan": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "properties": {
+                        "description": "Plan properties.",
+                        "type": "object"
+                    },
+                    "type": {
+                        "description": "Type of plan to create.",
+                        "type": ""
+                    }
+                }
+            },
+            "properties": {
+                "type": "object"
+            },
+            "DateRange": {
+                "type": "object",
+                "properties": {
+                    "end": {
+                        "description": "End of the date range.",
+                        "type": "string"
+                    },
+                    "start": {
+                        "description": "Start of the date range.",
+                        "type": "string"
+                    }
+                }
+            },
+            "DeliveryViewData": {
+                "type": "object",
+                "properties": {
+                    "childIdToParentIdMap": {
+                        "description": "Work item child id to parenet id map",
+                        "type": "object"
+                    },
+                    "criteriaStatus": {
+                        "description": "Filter criteria status of the timeline",
+                        "type": ""
+                    },
+                    "endDate": {
+                        "description": "The end date of the delivery view data",
+                        "type": "string"
+                    },
+                    "startDate": {
+                        "description": "The start date for the delivery view data",
+                        "type": "string"
+                    },
+                    "teams": {
+                        "description": "All the team data",
+                        "type": "array"
+                    },
+                    "TimelineCriteriaStatus": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "childIdToParentIdMap": {
+                "type": "object"
+            },
+            "criteriaStatus": {
+                "type": "object"
+            },
+            "teams": {
+                "type": "array"
+            },
+            "DeliveryViewPropertyCollection": {
+                "type": "object",
+                "properties": {
+                    "CardSettings": {
+                        "description": "Card settings, such as fields and rules",
+                        "type": "object"
+                    },
+                    "cardSettings": {
+                        "description": "Card settings",
+                        "type": ""
+                    },
+                    "criteria": {
+                        "description": "Field criteria",
+                        "type": "array"
+                    },
+                    "markers": {
+                        "description": "Markers. Will be missing\/null if there are no markers.",
+                        "type": "array"
+                    },
+                    "teamBacklogMappings": {
+                        "description": "Team backlog mappings",
+                        "type": "array"
+                    }
+                }
+            },
+            "markers": {
+                "type": "array"
+            },
+            "teamBacklogMappings": {
+                "type": "array"
+            },
+            "FieldInfo": {
+                "type": "object",
+                "properties": {
+                    "displayName": {
+                        "description": "The additional field display name",
+                        "type": "string"
+                    },
+                    "fieldType": {
+                        "description": "The additional field type",
+                        "type": ""
+                    },
+                    "isIdentity": {
+                        "description": "Indicates if the field definition is for an identity field.",
+                        "type": "boolean"
+                    },
+                    "referenceName": {
+                        "description": "Category Reference Name",
+                        "type": "string"
+                    }
+                }
+            },
+            "FieldReference": {
+                "type": "object",
+                "properties": {
+                    "referenceName": {
+                        "description": "Category Reference Name",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "FieldSetting": {
+                "type": "object"
+            },
+            "FilterClause": {
+                "type": "object",
+                "properties": {
+                    "fieldName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "index": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "logicalOperator": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "operator": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "FilterGroup": {
+                "type": "object",
+                "properties": {
+                    "end": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "level": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "start": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "FilterModel": {
+                "type": "object",
+                "properties": {
+                    "clauses": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "groups": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "maxGroupLevel": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "clauses": {
+                "type": "array"
+            },
+            "groups": {
+                "type": "array"
+            },
+            "IdentityRef": {
+                "type": "object",
+                "properties": {
+                    "directoryAlias": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "The additional field display name",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Backlog Id (for Legacy Backlog Level from process config it can be categoryref name)",
+                        "type": "string"
+                    },
+                    "imageUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "inactive": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isAadIdentity": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isContainer": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "profileUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uniqueName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Marker": {
+                "type": "object",
+                "properties": {
+                    "color": {
+                        "description": "Color for the backlog level",
+                        "type": "string"
+                    },
+                    "date": {
+                        "description": "Where the marker should be displayed on the timeline.",
+                        "type": "string"
+                    },
+                    "label": {
+                        "description": "Label\/title for the marker.",
+                        "type": "string"
+                    }
+                }
+            },
+            "Member": {
+                "type": "object",
+                "properties": {
+                    "displayName": {
+                        "description": "The additional field display name",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Backlog Id (for Legacy Backlog Level from process config it can be categoryref name)",
+                        "type": "string"
+                    },
+                    "imageUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uniqueName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ParentChildWIMap": {
+                "type": "object",
+                "properties": {
+                    "childWorkItemIds": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "childWorkItemIds": {
+                "type": "array"
+            },
+            "Plan": {
+                "type": "object",
+                "properties": {
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "createdByIdentity": {
+                        "description": "Identity that created this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4.",
+                        "type": ""
+                    },
+                    "createdDate": {
+                        "description": "Date when the plan was created",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Backlog Id (for Legacy Backlog Level from process config it can be categoryref name)",
+                        "type": "string"
+                    },
+                    "modifiedByIdentity": {
+                        "description": "Identity that last modified this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4.",
+                        "type": ""
+                    },
+                    "modifiedDate": {
+                        "description": "Date when the plan was last modified. Default to CreatedDate when the plan is first created.",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "properties": {
+                        "description": "Plan properties.",
+                        "type": "object"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "description": "Type of plan to create.",
+                        "type": ""
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "userPermissions": {
+                        "description": "Bit flag indicating set of permissions a user has to the plan.",
+                        "type": ""
+                    }
+                }
+            },
+            "PlanMetadata": {
+                "type": "object",
+                "properties": {
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "createdByIdentity": {
+                        "description": "Identity that created this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4.",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "modifiedDate": {
+                        "description": "Date when the plan was last modified. Default to CreatedDate when the plan is first created.",
+                        "type": "string"
+                    },
+                    "userPermissions": {
+                        "description": "Bit flag indicating set of permissions a user has to the plan.",
+                        "type": ""
+                    }
+                }
+            },
+            "PlanPropertyCollection": {
+                "type": "object"
+            },
+            "PlanViewData": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Backlog Id (for Legacy Backlog Level from process config it can be categoryref name)",
+                        "type": "string"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "ProcessConfiguration": {
+                "type": "object",
+                "properties": {
+                    "CategoryConfiguration": {
+                        "description": "Details about a given backlog category",
+                        "type": "object"
+                    },
+                    "bugWorkItems": {
+                        "description": "Details about bug work items",
+                        "type": ""
+                    },
+                    "portfolioBacklogs": {
+                        "description": "Portfolio backlog descriptors",
+                        "type": "array"
+                    },
+                    "requirementBacklog": {
+                        "description": "Requirement backlog",
+                        "type": ""
+                    },
+                    "taskBacklog": {
+                        "description": "Task backlog",
+                        "type": ""
+                    },
+                    "typeFields": {
+                        "description": "Field Type (e.g. Order, Activity) to Field Reference Name map",
+                        "type": "object"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ReferenceLinks": {
+                "type": "object",
+                "properties": {
+                    "links": {
+                        "description": "The readonly view of the links.  Because Reference links are readonly, we only want to expose them as read only.",
+                        "type": "object"
+                    }
+                }
+            },
+            "links": {
+                "type": "object"
+            },
+            "Rule": {
+                "type": "object",
+                "properties": {
+                    "clauses": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "filter": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "isEnabled": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "attribute": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "settings": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "TeamBacklogMapping": {
+                "type": "object",
+                "properties": {
+                    "categoryReferenceName": {
+                        "description": "Reference name of the corresponding WIT category",
+                        "type": "string"
+                    },
+                    "teamId": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TeamContext": {
+                "type": "object",
+                "properties": {
+                    "project": {
+                        "description": "The team project Id or name.  Ignored if ProjectId is set.",
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "description": "The Team Project ID.  Required if Project is not set.",
+                        "type": "string"
+                    },
+                    "team": {
+                        "description": "The Team Id or name.  Ignored if TeamId is set.",
+                        "type": "string"
+                    },
+                    "teamId": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TeamFieldValue": {
+                "type": "object",
+                "properties": {
+                    "includeChildren": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TeamFieldValues": {
+                "type": "object",
+                "properties": {
+                    "defaultValue": {
+                        "description": "The default team field value",
+                        "type": "string"
+                    },
+                    "FieldReference": {
+                        "description": "An abstracted reference to a field",
+                        "type": "object"
+                    },
+                    "field": {
+                        "description": "Shallow ref to the field being used as a team field",
+                        "type": ""
+                    },
+                    "values": {
+                        "description": "Collection of all valid team field values",
+                        "type": "array"
+                    }
+                }
+            },
+            "values": {
+                "type": "array"
+            },
+            "TeamFieldValuesPatch": {
+                "type": "object",
+                "properties": {
+                    "defaultValue": {
+                        "description": "The default team field value",
+                        "type": "string"
+                    },
+                    "values": {
+                        "description": "Collection of all valid team field values",
+                        "type": "array"
+                    }
+                }
+            },
+            "TeamIterationAttributes": {
+                "type": "object",
+                "properties": {
+                    "finishDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "startDate": {
+                        "description": "The start date for the delivery view data",
+                        "type": "string"
+                    }
+                }
+            },
+            "TeamMemberCapacity": {
+                "type": "object",
+                "properties": {
+                    "activities": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "daysOff": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "Member": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "teamMember": {
+                        "description": "Shallow Ref to the associated team member",
+                        "type": ""
+                    }
+                }
+            },
+            "TeamSetting": {
+                "type": "object",
+                "properties": {
+                    "backlogIteration": {
+                        "description": "Backlog Iteration",
+                        "type": ""
+                    },
+                    "backlogVisibilities": {
+                        "description": "Information about categories that are visible on the backlog.",
+                        "type": "object"
+                    },
+                    "bugsBehavior": {
+                        "description": "Bugs behavior",
+                        "type": ""
+                    },
+                    "defaultIteration": {
+                        "description": "Default Iteration, the iteration used when creating a new work item on the queries page.",
+                        "type": ""
+                    },
+                    "defaultIterationMacro": {
+                        "description": "Default Iteration macro (if any)",
+                        "type": "string"
+                    },
+                    "workingDays": {
+                        "description": "Days that the team is working",
+                        "type": "array"
+                    },
+                    "TeamSettingsIteration": {
+                        "description": "Represents a shallow ref for a single iteration",
+                        "type": "object"
+                    }
+                }
+            },
+            "backlogIteration": {
+                "type": "object"
+            },
+            "backlogVisibilities": {
+                "type": "object"
+            },
+            "defaultIteration": {
+                "type": "object"
+            },
+            "workingDays": {
+                "type": "array"
+            },
+            "TeamSettingsDataContractBase": {
+                "type": "object",
+                "properties": {
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TeamSettingsDaysOff": {
+                "type": "object",
+                "properties": {
+                    "daysOff": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "TeamSettingsDaysOffPatch": {
+                "type": "object",
+                "properties": {
+                    "daysOff": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "TeamSettingsIteration": {
+                "type": "object",
+                "properties": {
+                    "TeamIterationAttributes": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "attributes": {
+                        "description": "Attributes such as start and end date",
+                        "type": ""
+                    },
+                    "id": {
+                        "description": "Backlog Id (for Legacy Backlog Level from process config it can be categoryref name)",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "path": {
+                        "description": "Relative path of the iteration",
+                        "type": "string"
+                    }
+                }
+            },
+            "TeamSettingsPatch": {
+                "type": "object",
+                "properties": {
+                    "backlogIteration": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "backlogVisibilities": {
+                        "description": "Information about categories that are visible on the backlog.",
+                        "type": "object"
+                    },
+                    "bugsBehavior": {
+                        "description": "Bugs behavior",
+                        "type": ""
+                    },
+                    "defaultIteration": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "defaultIterationMacro": {
+                        "description": "Default Iteration macro (if any)",
+                        "type": "string"
+                    },
+                    "workingDays": {
+                        "description": "Days that the team is working",
+                        "type": "array"
+                    }
+                }
+            },
+            "TimelineCriteriaStatus": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "Type of plan to create.",
+                        "type": ""
+                    }
+                }
+            },
+            "TimelineIterationStatus": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "Type of plan to create.",
+                        "type": ""
+                    }
+                }
+            },
+            "TimelineTeamData": {
+                "type": "object",
+                "properties": {
+                    "BacklogLevel": {
+                        "description": "Contract representing a backlog level",
+                        "type": "object"
+                    },
+                    "backlog": {
+                        "description": "Backlog matching the mapped backlog associated with this team.",
+                        "type": ""
+                    },
+                    "fieldReferenceNames": {
+                        "description": "The field reference names of the work item data",
+                        "type": "array"
+                    },
+                    "id": {
+                        "description": "Backlog Id (for Legacy Backlog Level from process config it can be categoryref name)",
+                        "type": "string"
+                    },
+                    "isExpanded": {
+                        "description": "Was iteration and work item data retrieved for this team. <remarks> Teams with IsExpanded false have not had their iteration, work item, and field related data queried and will never contain this data. If true then these items are queried and, if there are items in the queried range, there will be data. <\/remarks>",
+                        "type": "boolean"
+                    },
+                    "iterations": {
+                        "description": "The iteration data, including the work items, in the queried date range.",
+                        "type": "array"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "orderByField": {
+                        "description": "The order by field name of this team",
+                        "type": "string"
+                    },
+                    "partiallyPagedFieldReferenceNames": {
+                        "description": "The field reference names of the partially paged work items, such as ID, WorkItemType",
+                        "type": "array"
+                    },
+                    "projectId": {
+                        "description": "The Team Project ID.  Required if Project is not set.",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "Status for this team.",
+                        "type": ""
+                    },
+                    "teamFieldDefaultValue": {
+                        "description": "The team field default value",
+                        "type": "string"
+                    },
+                    "teamFieldName": {
+                        "description": "The team field name of this team",
+                        "type": "string"
+                    },
+                    "teamFieldValues": {
+                        "description": "The team field values",
+                        "type": "array"
+                    },
+                    "workItemTypeColors": {
+                        "description": "Colors for the work item types.",
+                        "type": "array"
+                    },
+                    "TimelineTeamStatus": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "fieldReferenceNames": {
+                "type": "array"
+            },
+            "iterations": {
+                "type": "array"
+            },
+            "partiallyPagedFieldReferenceNames": {
+                "type": "array"
+            },
+            "status": {
+                "type": "object"
+            },
+            "teamFieldValues": {
+                "type": "array"
+            },
+            "workItemTypeColors": {
+                "type": "array"
+            },
+            "TimelineTeamIteration": {
+                "type": "object",
+                "properties": {
+                    "finishDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "partiallyPagedWorkItems": {
+                        "description": "All the partially paged workitems in this iteration.",
+                        "type": "array"
+                    },
+                    "path": {
+                        "description": "Relative path of the iteration",
+                        "type": "string"
+                    },
+                    "startDate": {
+                        "description": "The start date for the delivery view data",
+                        "type": "string"
+                    },
+                    "TimelineIterationStatus": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "status": {
+                        "description": "Status for this team.",
+                        "type": ""
+                    },
+                    "workItems": {
+                        "description": "The work items that have been paged in this iteration",
+                        "type": "array"
+                    }
+                }
+            },
+            "partiallyPagedWorkItems": {
+                "type": "array"
+            },
+            "workItems": {
+                "type": "array"
+            },
+            "TimelineTeamStatus": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "Type of plan to create.",
+                        "type": ""
+                    }
+                }
+            },
+            "UpdatePlan": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "properties": {
+                        "description": "Plan properties.",
+                        "type": "object"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "description": "Type of plan to create.",
+                        "type": ""
+                    }
+                }
+            },
+            "VssJsonCollectionWrapper": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "VssJsonCollectionWrapperBase": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "WorkItemColor": {
+                "type": "object",
+                "properties": {
+                    "icon": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "primaryColor": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "workItemTypeName": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemFieldReference": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "referenceName": {
+                        "description": "Category Reference Name",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemTrackingResourceReference": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemTypeReference": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemTypeStateInfo": {
+                "type": "object",
+                "properties": {
+                    "states": {
+                        "description": "State name to state category map",
+                        "type": "object"
+                    },
+                    "workItemTypeName": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "states": {
+                "type": "object"
+            }
+        }
+    }
+}
