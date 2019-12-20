@@ -1,0 +1,2281 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "5.0-previe",
+        "title": "WorkItemTracking",
+        "description": "",
+        "termsOfService": "https:\/\/go.microsoft.com\/fwlink\/?LinkId=329770"
+    },
+    "servers": [
+        "http:\/\/fabrikam-fiber-inc.visualstudio.com\/"
+    ],
+    "paths": {
+        "\/_apis\/wit\/artifactlinktypes": {
+            "get": {
+                "summary": "",
+                "description": "Get the workItemTracking toolTypes outboundLinks of type WorkItem",
+                "operationId": "ArtifactLinkTypesList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/wit\/artifacturiquery": {
+            "post": {
+                "summary": "",
+                "description": "Gets the results of the work item ids linked to the artifact uri",
+                "operationId": "ArtifactUriQueryGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/wit\/attachments": {
+            "post": {
+                "summary": "",
+                "description": "Uploads an attachment",
+                "operationId": "AttachmentsCreate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fileName",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "uploadType",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "areaPath",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/wit\/attachments\/{id}": {
+            "get": {
+                "summary": "",
+                "description": "Downloads an attachment\n\n#### Sample code\n\n             *[C# (DownloadAttachment method)](https:\/\/github.com\/Microsoft\/vsts-dotnet-samples\/blob\/master\/ClientLibrary\/Snippets\/Microsoft.TeamServices.Samples.Client\/WorkItemTracking\/AttachmentsSample.cs#L69)",
+                "operationId": "AttachmentsGetAttachmentContent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Attachment ID"
+                    },
+                    {
+                        "name": "fileName",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/wit\/classificationnodes\/{structureGroup}\/{*path}": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "operationId": "ClassificationNodesCreate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "structureGroup",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "",
+                "description": "",
+                "operationId": "ClassificationNodesDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "structureGroup",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "reclassifyId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "ClassificationNodesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "structureGroup",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "depth",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "summary": "",
+                "description": "",
+                "operationId": "ClassificationNodesUpdate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "structureGroup",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/wit\/classificationnodes": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "ClassificationNodesList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "depth",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/wit\/workItems\/{id}\/comments\/{revision}": {
+            "get": {
+                "summary": "",
+                "description": "Returns comment for a work item at the specified revision",
+                "operationId": "CommentsGetComment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Attachment ID"
+                    },
+                    {
+                        "name": "revision",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/wit\/workItems\/{id}\/comments": {
+            "get": {
+                "summary": "",
+                "description": "Returns specified number of comments for a work item from the specified revision",
+                "operationId": "CommentsGetComments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Attachment ID"
+                    },
+                    {
+                        "name": "fromRevision",
+                        "in": "query",
+                        "description": "Revision from which comments are to be fetched"
+                    },
+                    {
+                        "name": "top",
+                        "in": "query",
+                        "description": "The number of comments to return"
+                    },
+                    {
+                        "name": "order",
+                        "in": "query",
+                        "description": "Ascending or descending by revision id"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/wit\/fields\/{fieldNameOrRefName}": {
+            "delete": {
+                "summary": "",
+                "description": "",
+                "operationId": "FieldsDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fieldNameOrRefName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "",
+                "description": "Gets information on a specific field.",
+                "operationId": "FieldsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fieldNameOrRefName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "summary": "",
+                "description": "",
+                "operationId": "FieldsUpdate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fieldNameOrRefName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/wit\/fields": {
+            "get": {
+                "summary": "",
+                "description": "Returns information for all fields.",
+                "operationId": "FieldsList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "expand",
+                        "in": "query",
+                        "description": "Use ExtensionFields to include extension fields, otherwise exclude them. Unless the feature flag for this parameter is enabled, extension fields are always included."
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/wit\/queries\/{query}": {
+            "post": {
+                "summary": "",
+                "description": "Creates a query, or moves a query.",
+                "operationId": "QueriesCreate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "query",
+                        "in": "path",
+                        "description": "The parent path for the query to create."
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "",
+                "description": "Delete a query or a folder",
+                "operationId": "QueriesDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "query",
+                        "in": "path",
+                        "description": "The parent path for the query to create."
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "",
+                "description": "Retrieves an individual query and its children",
+                "operationId": "QueriesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "query",
+                        "in": "path",
+                        "description": "The parent path for the query to create."
+                    },
+                    {
+                        "name": "expand",
+                        "in": "query",
+                        "description": "Use ExtensionFields to include extension fields, otherwise exclude them. Unless the feature flag for this parameter is enabled, extension fields are always included."
+                    },
+                    {
+                        "name": "depth",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "includeDeleted",
+                        "in": "query",
+                        "description": "Include deleted queries and folders"
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ArtifactUriQueryResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AccountMyWorkResult": {
+                "type": "object",
+                "properties": {
+                    "querySizeLimitExceeded": {
+                        "description": "True, when length of WorkItemDetails is same as the limit",
+                        "type": "boolean"
+                    },
+                    "workItemDetails": {
+                        "description": "WorkItem Details",
+                        "type": "array"
+                    }
+                }
+            },
+            "workItemDetails": {
+                "type": "array"
+            },
+            "AccountRecentActivityWorkItemModel": {
+                "type": "object",
+                "properties": {
+                    "activityDate": {
+                        "description": "Date of the last Activity by the user",
+                        "type": "string"
+                    },
+                    "activityType": {
+                        "description": "Type of the activity",
+                        "type": ""
+                    },
+                    "assignedTo": {
+                        "description": "Assigned To",
+                        "type": "string"
+                    },
+                    "changedDate": {
+                        "description": "Last changed date of the work item",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Work Item Id",
+                        "type": "integer"
+                    },
+                    "identityId": {
+                        "description": "TeamFoundationId of the user this activity belongs to",
+                        "type": "string"
+                    },
+                    "state": {
+                        "description": "State of the work item",
+                        "type": "string"
+                    },
+                    "teamProject": {
+                        "description": "Team project the work item belongs to",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "Title of the work item",
+                        "type": "string"
+                    },
+                    "workItemType": {
+                        "description": "Type of Work Item",
+                        "type": "string"
+                    }
+                }
+            },
+            "AccountRecentMentionWorkItemModel": {
+                "type": "object",
+                "properties": {
+                    "assignedTo": {
+                        "description": "Assigned To",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Work Item Id",
+                        "type": "integer"
+                    },
+                    "mentionedDateField": {
+                        "description": "Lastest date that the user were mentioned",
+                        "type": "string"
+                    },
+                    "state": {
+                        "description": "State of the work item",
+                        "type": "string"
+                    },
+                    "teamProject": {
+                        "description": "Team project the work item belongs to",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "Title of the work item",
+                        "type": "string"
+                    },
+                    "workItemType": {
+                        "description": "Type of Work Item",
+                        "type": "string"
+                    }
+                }
+            },
+            "AccountWorkWorkItemModel": {
+                "type": "object",
+                "properties": {
+                    "assignedTo": {
+                        "description": "Assigned To",
+                        "type": "string"
+                    },
+                    "changedDate": {
+                        "description": "Last changed date of the work item",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Work Item Id",
+                        "type": "integer"
+                    },
+                    "state": {
+                        "description": "State of the work item",
+                        "type": "string"
+                    },
+                    "teamProject": {
+                        "description": "Team project the work item belongs to",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "Title of the work item",
+                        "type": "string"
+                    },
+                    "workItemType": {
+                        "description": "Type of Work Item",
+                        "type": "string"
+                    }
+                }
+            },
+            "ArtifactUriQuery": {
+                "type": "object",
+                "properties": {
+                    "artifactUris": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "artifactUris": {
+                "type": "array"
+            },
+            "ArtifactUriQueryResult": {
+                "type": "object",
+                "properties": {
+                    "artifactUrisQueryResult": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "artifactUrisQueryResult": {
+                "type": "object"
+            },
+            "AttachmentReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "FieldDependentRule": {
+                "type": "object",
+                "properties": {
+                    "dependentFields": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "dependentFields": {
+                "type": "array"
+            },
+            "FieldsToEvaluate": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "fieldUpdates": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "fieldValues": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "rulesFrom": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "fields": {
+                "type": "object"
+            },
+            "fieldUpdates": {
+                "type": "object"
+            },
+            "fieldValues": {
+                "type": "object"
+            },
+            "rulesFrom": {
+                "type": "array"
+            },
+            "IdentityRef": {
+                "type": "object",
+                "properties": {
+                    "directoryAlias": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "imageUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "inactive": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isAadIdentity": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isContainer": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "profileUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uniqueName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "IdentityReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    }
+                }
+            },
+            "JsonPatchDocument": {
+                "type": "object"
+            },
+            "JsonPatchOperation": {
+                "type": "object",
+                "properties": {
+                    "from": {
+                        "description": "The path to copy from for the Move\/Copy operation.",
+                        "type": "string"
+                    },
+                    "op": {
+                        "description": "The patch operation",
+                        "type": ""
+                    },
+                    "path": {
+                        "description": "The path for the operation",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "The value for the operation. This is either a primitive or a JToken.",
+                        "type": "object"
+                    }
+                }
+            },
+            "value": {
+                "type": "array"
+            },
+            "Link": {
+                "type": "object",
+                "properties": {
+                    "attributes": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "rel": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "attributes": {
+                "type": "object"
+            },
+            "ProjectWorkItemStateColors": {
+                "type": "object",
+                "properties": {
+                    "projectName": {
+                        "description": "Project name",
+                        "type": "string"
+                    },
+                    "workItemTypeStateColors": {
+                        "description": "State colors for all work item type in a project",
+                        "type": "array"
+                    }
+                }
+            },
+            "workItemTypeStateColors": {
+                "type": "array"
+            },
+            "ProvisioningResult": {
+                "type": "object",
+                "properties": {
+                    "provisioningImportEvents": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "provisioningImportEvents": {
+                "type": "array"
+            },
+            "QueryHierarchyItem": {
+                "type": "object",
+                "properties": {
+                    "children": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "clauses": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "columns": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "IdentityReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "createdDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "filterOptions": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "hasChildren": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "isDeleted": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isFolder": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isInvalidSyntax": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isPublic": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "lastModifiedBy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "lastModifiedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "linkClauses": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    },
+                    "path": {
+                        "description": "The path for the operation",
+                        "type": "string"
+                    },
+                    "queryType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "sortColumns": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "sourceClauses": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "targetClauses": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "wiql": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "WorkItemQueryClause": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "children": {
+                "type": "array"
+            },
+            "clauses": {
+                "type": "array"
+            },
+            "columns": {
+                "type": "array"
+            },
+            "linkClauses": {
+                "type": "object"
+            },
+            "sortColumns": {
+                "type": "array"
+            },
+            "sourceClauses": {
+                "type": "object"
+            },
+            "targetClauses": {
+                "type": "object"
+            },
+            "QueryHierarchyItemsResult": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "ReferenceLinks": {
+                "type": "object",
+                "properties": {
+                    "links": {
+                        "description": "The readonly view of the links.  Because Reference links are readonly, we only want to expose them as read only.",
+                        "type": "object"
+                    }
+                }
+            },
+            "links": {
+                "type": "object"
+            },
+            "ReportingWorkItemLink": {
+                "type": "object",
+                "properties": {
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "changedBy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "changedDate": {
+                        "description": "Last changed date of the work item",
+                        "type": "string"
+                    },
+                    "changedOperation": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "comment": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "isActive": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "linkType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "rel": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "sourceId": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "targetId": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "ReportingWorkItemLinksBatch": {
+                "type": "object"
+            },
+            "ReportingWorkItemRevisionsBatch": {
+                "type": "object"
+            },
+            "ReportingWorkItemRevisionsFilter": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "includeDeleted": {
+                        "description": "Include deleted work item in the result.",
+                        "type": "boolean"
+                    },
+                    "includeIdentityRef": {
+                        "description": "Return an identity reference instead of a string value for identity fields.",
+                        "type": "boolean"
+                    },
+                    "includeLatestOnly": {
+                        "description": "Include only the latest version of a work item, skipping over all previous revisions of the work item.",
+                        "type": "boolean"
+                    },
+                    "includeTagRef": {
+                        "description": "Include tag reference instead of string value for System.Tags field",
+                        "type": "boolean"
+                    },
+                    "types": {
+                        "description": "A list of types to filter the results to specific work item types. Omit this parameter to get work item revisions of all work item types.",
+                        "type": "array"
+                    }
+                }
+            },
+            "types": {
+                "type": "array"
+            },
+            "StreamedBatch": {
+                "type": "object",
+                "properties": {
+                    "continuationToken": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "isLastBatch": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "nextLink": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "values": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "values": {
+                "type": "array"
+            },
+            "TeamContext": {
+                "type": "object",
+                "properties": {
+                    "project": {
+                        "description": "The team project Id or name.  Ignored if ProjectId is set.",
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "description": "The Team Project ID.  Required if Project is not set.",
+                        "type": "string"
+                    },
+                    "team": {
+                        "description": "The Team Id or name.  Ignored if TeamId is set.",
+                        "type": "string"
+                    },
+                    "teamId": {
+                        "description": "The Team Id",
+                        "type": "string"
+                    }
+                }
+            },
+            "VssJsonCollectionWrapper": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "VssJsonCollectionWrapperBase": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "Wiql": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkArtifactLink": {
+                "type": "object",
+                "properties": {
+                    "artifactType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "linkType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "toolType": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItem": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "id": {
+                        "description": "Work Item Id",
+                        "type": "integer"
+                    },
+                    "relations": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "rev": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "relations": {
+                "type": "array"
+            },
+            "WorkItemClassificationNode": {
+                "type": "object",
+                "properties": {
+                    "attributes": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "children": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "id": {
+                        "description": "Work Item Id",
+                        "type": "integer"
+                    },
+                    "identifier": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    },
+                    "structureType": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "WorkItemComment": {
+                "type": "object",
+                "properties": {
+                    "IdentityReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "revisedBy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "revisedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "text": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemComments": {
+                "type": "object",
+                "properties": {
+                    "comments": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "fromRevisionCount": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "totalCount": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "comments": {
+                "type": "array"
+            },
+            "WorkItemDelete": {
+                "type": "object",
+                "properties": {
+                    "WorkItem": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "resource": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "WorkItemDeleteReference": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "deletedBy": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "deletedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Work Item Id",
+                        "type": "integer"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    },
+                    "project": {
+                        "description": "The team project Id or name.  Ignored if ProjectId is set.",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemDeleteShallowReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Work Item Id",
+                        "type": "integer"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemDeleteUpdate": {
+                "type": "object",
+                "properties": {
+                    "isDeleted": {
+                        "description": "",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "WorkItemField": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "isIdentity": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isPicklist": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isPicklistSuggested": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    },
+                    "readOnly": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "referenceName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "supportedOperations": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "supportedOperations": {
+                "type": "array"
+            },
+            "WorkItemFieldOperation": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    },
+                    "referenceName": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemFieldReference": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    },
+                    "referenceName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemFieldUpdate": {
+                "type": "object",
+                "properties": {
+                    "newValue": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "oldValue": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "newValue": {
+                "type": "object"
+            },
+            "oldValue": {
+                "type": "object"
+            },
+            "WorkItemHistory": {
+                "type": "object",
+                "properties": {
+                    "rev": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "IdentityReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "revisedBy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "revisedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemIcon": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemLink": {
+                "type": "object",
+                "properties": {
+                    "rel": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "target": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "WorkItemReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "source": {
+                "type": "object"
+            },
+            "target": {
+                "type": "object"
+            },
+            "WorkItemQueryClause": {
+                "type": "object",
+                "properties": {
+                    "clauses": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "WorkItemFieldReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "field": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "fieldValue": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "isFieldValue": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "logicalOperator": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "WorkItemFieldOperation": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "operator": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemQueryResult": {
+                "type": "object",
+                "properties": {
+                    "asOf": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "columns": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "queryResultType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "queryType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "sortColumns": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "workItemRelations": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "workItems": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "workItemRelations": {
+                "type": "array"
+            },
+            "workItems": {
+                "type": "array"
+            },
+            "WorkItemQuerySortColumn": {
+                "type": "object",
+                "properties": {
+                    "descending": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "WorkItemFieldReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "field": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "WorkItemReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Work Item Id",
+                        "type": "integer"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemRelation": {
+                "type": "object"
+            },
+            "WorkItemRelationType": {
+                "type": "object",
+                "properties": {
+                    "attributes": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "WorkItemRelationUpdates": {
+                "type": "object",
+                "properties": {
+                    "added": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "removed": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "updated": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "added": {
+                "type": "array"
+            },
+            "removed": {
+                "type": "array"
+            },
+            "updated": {
+                "type": "array"
+            },
+            "WorkItemStateColor": {
+                "type": "object",
+                "properties": {
+                    "color": {
+                        "description": "Color value",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemStateTransition": {
+                "type": "object",
+                "properties": {
+                    "actions": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "to": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "actions": {
+                "type": "array"
+            },
+            "WorkItemTemplate": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "WorkItemTemplateReference": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    },
+                    "workItemTypeName": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemTrackingReference": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    },
+                    "referenceName": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemTrackingResource": {
+                "type": "object",
+                "properties": {
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "WorkItemTrackingResourceReference": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemType": {
+                "type": "object",
+                "properties": {
+                    "color": {
+                        "description": "Color value",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fieldInstances": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "fields": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "WorkItemIcon": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "icon": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    },
+                    "transitions": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "xmlForm": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "fieldInstances": {
+                "type": "array"
+            },
+            "transitions": {
+                "type": "object"
+            },
+            "WorkItemTypeCategory": {
+                "type": "object",
+                "properties": {
+                    "defaultWorkItemType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    },
+                    "referenceName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "workItemTypes": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "WorkItemTypeReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "defaultWorkItemType": {
+                "type": "object"
+            },
+            "workItemTypes": {
+                "type": "array"
+            },
+            "WorkItemTypeColor": {
+                "type": "object",
+                "properties": {
+                    "primaryColor": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "secondaryColor": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "workItemTypeName": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemTypeColorAndIcon": {
+                "type": "object",
+                "properties": {
+                    "color": {
+                        "description": "Color value",
+                        "type": "string"
+                    },
+                    "icon": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "workItemTypeName": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemTypeFieldInstance": {
+                "type": "object",
+                "properties": {
+                    "alwaysRequired": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "WorkItemFieldReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "field": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "helpText": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemTypeReference": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Legacy back-compat property. This has been the WIT specific value from Constants. Will be hidden (but exists) on the client unless they are targeting the newest version",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemTypeStateColors": {
+                "type": "object",
+                "properties": {
+                    "stateColors": {
+                        "description": "Work item type state colors",
+                        "type": "array"
+                    },
+                    "workItemTypeName": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "stateColors": {
+                "type": "array"
+            },
+            "WorkItemTypeTemplate": {
+                "type": "object",
+                "properties": {
+                    "template": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkItemTypeTemplateUpdateModel": {
+                "type": "object",
+                "properties": {
+                    "actionType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "methodology": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "template": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "templateType": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "WorkItemUpdate": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "id": {
+                        "description": "Work Item Id",
+                        "type": "integer"
+                    },
+                    "WorkItemRelationUpdates": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "relations": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "rev": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "IdentityReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "revisedBy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "revisedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "workItemId": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "POST__wit_attachments_fileName-_textFile_": {
+                "type": "object"
+            },
+            "POST__wit_attachments_fileName-_binaryFile_": {
+                "type": "object"
+            },
+            "POST_wit_attachments_fileName_chunked_register": {
+                "type": "object"
+            },
+            "POST_wit_attachments_fileName_chunked_content1": {
+                "type": "object"
+            },
+            "POST_wit_attachments_fileName_chunked_content2": {
+                "type": "object"
+            },
+            "GetWorkItemIcons": {
+                "type": "object"
+            },
+            "GET__wit_queries__depth-1": {
+                "type": "object"
+            },
+            "GET__wit_queries": {
+                "type": "object"
+            },
+            "GET__wit_queries__depth-1__expand-all": {
+                "type": "object"
+            },
+            "GET__wit_queries__depth-2__includeDeleted-true": {
+                "type": "object"
+            },
+            "POST__wit_queries_Shared Queries__folderName_": {
+                "type": "object"
+            },
+            "POST__wit_queries_Shared Queries": {
+                "type": "object"
+            },
+            "POST__wit_queries_My Queries": {
+                "type": "object"
+            },
+            "DELETE__wit_queries__queryId_": {
+                "type": "object"
+            },
+            "DELETE__wit_queries_My Queries__folderNameNew_": {
+                "type": "object"
+            },
+            "PATCH__wit_queries__folderId___undeleteDescendants-true": {
+                "type": "object"
+            },
+            "GET__wit_queries__queryId_": {
+                "type": "object"
+            },
+            "GET__wit_queries_Shared Queries__folderName___queryName_": {
+                "type": "object"
+            },
+            "GET__wit_queries__folderId_": {
+                "type": "object"
+            },
+            "GET__wit_queries_Shared Queries__folderName_": {
+                "type": "object"
+            },
+            "GET__wit_queries__queryId___includeDeleted-true": {
+                "type": "object"
+            },
+            "GET__wit_queries__queryId___expand-clauses": {
+                "type": "object"
+            },
+            "GET__wit_queries__hierarchicalQueryId___expand-clauses": {
+                "type": "object"
+            },
+            "PATCH__wit_queries_Shared Queries__folderName___queryNameNew_": {
+                "type": "object"
+            },
+            "PATCH__wit_queries_Shared Queries__folderName_": {
+                "type": "object"
+            },
+            "PATCH__wit_queries_Shared Queries__folderName_-1": {
+                "type": "object"
+            },
+            "GET__wit_reporting_workItemLinks": {
+                "type": "object"
+            },
+            "GET__wit_reporting_workItemRevisions": {
+                "type": "object"
+            },
+            "GET__wit_reporting_workItemRevisions_includeIdentityRef-true_watermark-794": {
+                "type": "object"
+            },
+            "POST__wit_reporting_workItemRevisions_watermark-794": {
+                "type": "object"
+            },
+            "POST__wit_wiql": {
+                "type": "object"
+            },
+            "GET__wit_wiql__queryId_": {
+                "type": "object"
+            },
+            "GET__wit_wiql__queryId_-1": {
+                "type": "object"
+            }
+        }
+    }
+}
