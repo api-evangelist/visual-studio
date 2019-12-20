@@ -1,0 +1,1746 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "4.1",
+        "title": "ServiceHooks",
+        "description": "",
+        "termsOfService": "https:\/\/go.microsoft.com\/fwlink\/?LinkId=329770"
+    },
+    "servers": [
+        "http:\/\/fabrikam-fiber-inc.visualstudio.com\/"
+    ],
+    "paths": {
+        "\/_apis\/hooks\/consumers\/{consumerId}\/actions\/{consumerActionId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "ActionsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "consumerId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "consumerActionId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "publisherId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/consumers\/{consumerId}\/actions": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "ActionsList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "consumerId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "publisherId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/consumers\/{consumerId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "ConsumersGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "consumerId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "publisherId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/consumers": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "ConsumersList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "publisherId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/publishers\/{publisherId}\/eventtypes\/{eventTypeId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EventTypesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "publisherId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "eventTypeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/publishers\/{publisherId}\/eventtypes": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EventTypesList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "publisherId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/public\/hooks\/externalevents": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "operationId": "ExternalEventsPublishExternalEvent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "publisherId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "channelId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/subscriptions\/{subscriptionId}\/notifications\/{notificationId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "NotificationsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "subscriptionId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "notificationId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/subscriptions\/{subscriptionId}\/notifications": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "NotificationsList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "subscriptionId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "maxResults",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "result",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/notificationsquery": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "operationId": "NotificationsQueryQuery",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/publishers\/{publisherId}\/inputValuesQuery": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "operationId": "PublisherInputValuesQueryQuery",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "publisherId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/publishers\/{publisherId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "PublishersGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "publisherId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/publishers": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "PublishersList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/publishersquery": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "operationId": "PublishersQueryQuery",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/subscriptions": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "operationId": "SubscriptionsCreate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "SubscriptionsList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "publisherId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "eventType",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "consumerId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "consumerActionId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/hooks\/subscriptions\/{subscriptionId}": {
+            "delete": {
+                "summary": "",
+                "description": "",
+                "operationId": "SubscriptionsDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "subscriptionId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "SubscriptionsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "subscriptionId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "",
+                "description": "",
+                "operationId": "SubscriptionsReplaceSubscription",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "subscriptionId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ConsumerAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Consumer": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "Reference Links",
+                        "type": ""
+                    },
+                    "actions": {
+                        "description": "Gets this consumer's actions.",
+                        "type": "array"
+                    },
+                    "authenticationType": {
+                        "description": "Gets or sets this consumer's authentication type.",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "Gets or sets this consumer's localized description.",
+                        "type": "string"
+                    },
+                    "externalConfiguration": {
+                        "description": "Non-null only if subscriptions for this consumer are configured externally.",
+                        "type": ""
+                    },
+                    "id": {
+                        "description": "Gets or sets this consumer's identifier.",
+                        "type": "string"
+                    },
+                    "imageUrl": {
+                        "description": "Gets or sets this consumer's image URL, if any.",
+                        "type": "string"
+                    },
+                    "informationUrl": {
+                        "description": "Gets or sets this consumer's information URL, if any.",
+                        "type": "string"
+                    },
+                    "inputDescriptors": {
+                        "description": "Gets or sets this consumer's input descriptors.",
+                        "type": "array"
+                    },
+                    "name": {
+                        "description": "Gets or sets this consumer's localized name.",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "The url for this resource",
+                        "type": "string"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    },
+                    "ExternalConfigurationDescriptor": {
+                        "description": "Describes how to configure a subscription that is managed externally.",
+                        "type": "object"
+                    }
+                }
+            },
+            "_links": {
+                "type": "object"
+            },
+            "actions": {
+                "type": "array"
+            },
+            "externalConfiguration": {
+                "type": "object"
+            },
+            "inputDescriptors": {
+                "type": "array"
+            },
+            "ConsumerAction": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "Reference Links",
+                        "type": ""
+                    },
+                    "allowResourceVersionOverride": {
+                        "description": "Gets or sets the flag indicating if resource version can be overridden when creating or editing a subscription.",
+                        "type": "boolean"
+                    },
+                    "consumerId": {
+                        "description": "Gets or sets the identifier of the consumer to which this action belongs.",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "Gets or sets this consumer's localized description.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Gets or sets this consumer's identifier.",
+                        "type": "string"
+                    },
+                    "inputDescriptors": {
+                        "description": "Gets or sets this consumer's input descriptors.",
+                        "type": "array"
+                    },
+                    "name": {
+                        "description": "Gets or sets this consumer's localized name.",
+                        "type": "string"
+                    },
+                    "supportedEventTypes": {
+                        "description": "Gets or sets this action's supported event identifiers.",
+                        "type": "array"
+                    },
+                    "supportedResourceVersions": {
+                        "description": "Gets or sets this action's supported resource versions.",
+                        "type": "object"
+                    },
+                    "url": {
+                        "description": "The url for this resource",
+                        "type": "string"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    }
+                }
+            },
+            "supportedEventTypes": {
+                "type": "array"
+            },
+            "supportedResourceVersions": {
+                "type": "array"
+            },
+            "Event": {
+                "type": "object",
+                "properties": {
+                    "createdDate": {
+                        "description": "Gets or sets the UTC-based date and time that this event was created.",
+                        "type": "string"
+                    },
+                    "detailedMessage": {
+                        "description": "Gets or sets the detailed message associated with this event.",
+                        "type": ""
+                    },
+                    "eventType": {
+                        "description": "Gets or sets the type of this event.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Gets or sets this consumer's identifier.",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "Gets or sets the (brief) message associated with this event.",
+                        "type": ""
+                    },
+                    "publisherId": {
+                        "description": "Gets or sets the identifier of the publisher that raised this event.",
+                        "type": "string"
+                    },
+                    "resource": {
+                        "description": "Gets or sets the data associated with this event.",
+                        "type": "object"
+                    },
+                    "resourceContainers": {
+                        "description": "Gets or sets the resource containers.",
+                        "type": "object"
+                    },
+                    "resourceVersion": {
+                        "description": "Gets or sets the version of the data associated with this event.",
+                        "type": "string"
+                    },
+                    "sessionToken": {
+                        "description": "Gets or sets the Session Token that can be used in further interactions",
+                        "type": ""
+                    },
+                    "FormattedEventMessage": {
+                        "description": "Provides different formats of an event message",
+                        "type": "object"
+                    }
+                }
+            },
+            "detailedMessage": {
+                "type": "object"
+            },
+            "message": {
+                "type": "object"
+            },
+            "resource": {
+                "type": "object"
+            },
+            "resourceContainers": {
+                "type": "object"
+            },
+            "sessionToken": {
+                "type": "object",
+                "properties": {
+                    "error": {
+                        "description": "The error message in case of error",
+                        "type": "string"
+                    },
+                    "token": {
+                        "description": "The access token",
+                        "type": "string"
+                    },
+                    "validTo": {
+                        "description": "The expiration date in UTC",
+                        "type": "string"
+                    }
+                }
+            },
+            "EventTypeDescriptor": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "Gets or sets this consumer's localized description.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Gets or sets this consumer's identifier.",
+                        "type": "string"
+                    },
+                    "inputDescriptors": {
+                        "description": "Gets or sets this consumer's input descriptors.",
+                        "type": "array"
+                    },
+                    "name": {
+                        "description": "Gets or sets this consumer's localized name.",
+                        "type": "string"
+                    },
+                    "publisherId": {
+                        "description": "Gets or sets the identifier of the publisher that raised this event.",
+                        "type": "string"
+                    },
+                    "supportedResourceVersions": {
+                        "description": "Supported versions for the event's resource payloads.",
+                        "type": "array"
+                    },
+                    "url": {
+                        "description": "The url for this resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "ExternalConfigurationDescriptor": {
+                "type": "object",
+                "properties": {
+                    "createSubscriptionUrl": {
+                        "description": "Url of the site to create this type of subscription.",
+                        "type": "string"
+                    },
+                    "editSubscriptionPropertyName": {
+                        "description": "The name of an input property that contains the URL to edit a subscription.",
+                        "type": "string"
+                    },
+                    "hostedOnly": {
+                        "description": "True if the external configuration applies only to hosted.",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "FormattedEventMessage": {
+                "type": "object",
+                "properties": {
+                    "html": {
+                        "description": "Gets or sets the html format of the message",
+                        "type": "string"
+                    },
+                    "markdown": {
+                        "description": "Gets or sets the markdown format of the message",
+                        "type": "string"
+                    },
+                    "text": {
+                        "description": "Gets or sets the raw text of the message",
+                        "type": "string"
+                    }
+                }
+            },
+            "IdentityRef": {
+                "type": "object",
+                "properties": {
+                    "directoryAlias": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Gets or sets this consumer's identifier.",
+                        "type": "string"
+                    },
+                    "imageUrl": {
+                        "description": "Gets or sets this consumer's image URL, if any.",
+                        "type": "string"
+                    },
+                    "inactive": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isAadIdentity": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isContainer": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "profileUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uniqueName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "The url for this resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "InputDescriptor": {
+                "type": "object",
+                "properties": {
+                    "dependencyInputIds": {
+                        "description": "The ids of all inputs that the value of this input is dependent on.",
+                        "type": "array"
+                    },
+                    "description": {
+                        "description": "Gets or sets this consumer's localized description.",
+                        "type": "string"
+                    },
+                    "groupName": {
+                        "description": "The group localized name to which this input belongs and can be shown as a header for the container that will include all the inputs in the group.",
+                        "type": "string"
+                    },
+                    "hasDynamicValueInformation": {
+                        "description": "If true, the value information for this input is dynamic and should be fetched when the value of dependency inputs change.",
+                        "type": "boolean"
+                    },
+                    "id": {
+                        "description": "Gets or sets this consumer's identifier.",
+                        "type": "string"
+                    },
+                    "inputMode": {
+                        "description": "Mode in which the value of this input should be entered",
+                        "type": ""
+                    },
+                    "isConfidential": {
+                        "description": "Gets whether this input is confidential, such as for a password or application key",
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "description": "Gets or sets this consumer's localized name.",
+                        "type": "string"
+                    },
+                    "properties": {
+                        "description": "Custom properties for the input which can be used by the service provider",
+                        "type": "object"
+                    },
+                    "type": {
+                        "description": "Underlying data type for the input value. When this value is specified, InputMode, Validation and Values are optional.",
+                        "type": "string"
+                    },
+                    "useInDefaultDescription": {
+                        "description": "Gets whether this input is included in the default generated action description.",
+                        "type": "boolean"
+                    },
+                    "validation": {
+                        "description": "Information to use to validate this input's value",
+                        "type": ""
+                    },
+                    "valueHint": {
+                        "description": "A hint for input value. It can be used in the UI as the input placeholder.",
+                        "type": "string"
+                    },
+                    "values": {
+                        "description": "Information about possible values for this input",
+                        "type": ""
+                    },
+                    "InputValidation": {
+                        "description": "Describes what values are valid for a subscription input",
+                        "type": "object"
+                    },
+                    "InputValues": {
+                        "description": "Information about the possible\/allowed values for a given subscription input",
+                        "type": "object"
+                    }
+                }
+            },
+            "dependencyInputIds": {
+                "type": "array"
+            },
+            "properties": {
+                "type": "object"
+            },
+            "validation": {
+                "type": "object"
+            },
+            "values": {
+                "type": "object"
+            },
+            "InputFilter": {
+                "type": "object",
+                "properties": {
+                    "conditions": {
+                        "description": "Groups of input filter expressions. This filter matches a set of inputs if any (one or more) of the groups evaluates to true.",
+                        "type": "array"
+                    }
+                }
+            },
+            "conditions": {
+                "type": "array"
+            },
+            "InputFilterCondition": {
+                "type": "object",
+                "properties": {
+                    "caseSensitive": {
+                        "description": "Whether or not to do a case sensitive match",
+                        "type": "boolean"
+                    },
+                    "inputId": {
+                        "description": "The Id of the input to filter on",
+                        "type": "string"
+                    },
+                    "inputValue": {
+                        "description": "The \"expected\" input value to compare with the actual input value",
+                        "type": "string"
+                    },
+                    "operator": {
+                        "description": "The operator applied between the expected and actual input value",
+                        "type": ""
+                    }
+                }
+            },
+            "InputValidation": {
+                "type": "object",
+                "properties": {
+                    "dataType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "isRequired": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "maxLength": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "maxValue": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "minLength": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "minValue": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "pattern": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "patternMismatchErrorMessage": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "InputValue": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "Any other data about this input",
+                        "type": "object"
+                    },
+                    "displayValue": {
+                        "description": "The text to show for the display of this value",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "The value to store for this input",
+                        "type": "string"
+                    }
+                }
+            },
+            "data": {
+                "type": "object"
+            },
+            "InputValues": {
+                "type": "object",
+                "properties": {
+                    "defaultValue": {
+                        "description": "The default value to use for this input",
+                        "type": "string"
+                    },
+                    "error": {
+                        "description": "Errors encountered while computing dynamic values.",
+                        "type": ""
+                    },
+                    "inputId": {
+                        "description": "The Id of the input to filter on",
+                        "type": "string"
+                    },
+                    "isDisabled": {
+                        "description": "Should this input be disabled",
+                        "type": "boolean"
+                    },
+                    "isLimitedToPossibleValues": {
+                        "description": "Should the value be restricted to one of the values in the PossibleValues (True) or are the values in PossibleValues just a suggestion (False)",
+                        "type": "boolean"
+                    },
+                    "isReadOnly": {
+                        "description": "Should this input be made read-only",
+                        "type": "boolean"
+                    },
+                    "possibleValues": {
+                        "description": "Possible values that this input can take",
+                        "type": "array"
+                    },
+                    "InputValuesError": {
+                        "description": "Error information related to a subscription input value.",
+                        "type": "object"
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "possibleValues": {
+                "type": "array"
+            },
+            "InputValuesError": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "The error message.",
+                        "type": "string"
+                    }
+                }
+            },
+            "InputValuesQuery": {
+                "type": "object",
+                "properties": {
+                    "currentValues": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "inputValues": {
+                        "description": "The input values to return on input, and the result from the consumer on output.",
+                        "type": "array"
+                    },
+                    "resource": {
+                        "description": "Gets or sets the data associated with this event.",
+                        "type": "object"
+                    }
+                }
+            },
+            "currentValues": {
+                "type": "object"
+            },
+            "inputValues": {
+                "type": "array"
+            },
+            "Notification": {
+                "type": "object",
+                "properties": {
+                    "createdDate": {
+                        "description": "Gets or sets the UTC-based date and time that this event was created.",
+                        "type": "string"
+                    },
+                    "details": {
+                        "description": "Details about this notification (if available)",
+                        "type": ""
+                    },
+                    "eventId": {
+                        "description": "The event id associated with this notification",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "The notification id",
+                        "type": "integer"
+                    },
+                    "modifiedDate": {
+                        "description": "Gets or sets date and time that this result was last modified.",
+                        "type": "string"
+                    },
+                    "result": {
+                        "description": "Result of the notification",
+                        "type": ""
+                    },
+                    "status": {
+                        "description": "Status of the notification",
+                        "type": ""
+                    },
+                    "subscriberId": {
+                        "description": "The subscriber Id  associated with this notification. This is the last identity who touched in the subscription. In case of test notifications it can be the tester if the subscription is not created yet.",
+                        "type": "string"
+                    },
+                    "subscriptionId": {
+                        "description": "The subscription id associated with this notification",
+                        "type": "string"
+                    },
+                    "NotificationDetails": {
+                        "description": "Defines the data contract of notification details.",
+                        "type": "object"
+                    }
+                }
+            },
+            "details": {
+                "type": "object"
+            },
+            "NotificationDetails": {
+                "type": "object",
+                "properties": {
+                    "completedDate": {
+                        "description": "Gets or sets the time that this notification was completed (response received from the consumer)",
+                        "type": "string"
+                    },
+                    "consumerActionId": {
+                        "description": "Gets or sets this notification detail's consumer action identifier.",
+                        "type": "string"
+                    },
+                    "consumerId": {
+                        "description": "Gets or sets the identifier of the consumer to which this action belongs.",
+                        "type": "string"
+                    },
+                    "consumerInputs": {
+                        "description": "Gets or sets this notification detail's consumer inputs.",
+                        "type": "object"
+                    },
+                    "dequeuedDate": {
+                        "description": "Gets or sets the time that this notification was dequeued for processing",
+                        "type": "string"
+                    },
+                    "errorDetail": {
+                        "description": "Gets or sets this notification detail's error detail.",
+                        "type": "string"
+                    },
+                    "errorMessage": {
+                        "description": "Gets or sets this notification detail's error message.",
+                        "type": "string"
+                    },
+                    "Event": {
+                        "description": "Encapsulates the properties of an event.",
+                        "type": "object"
+                    },
+                    "event": {
+                        "description": "Gets or sets this notification detail's event content.",
+                        "type": ""
+                    },
+                    "eventType": {
+                        "description": "Gets or sets the type of this event.",
+                        "type": "string"
+                    },
+                    "processedDate": {
+                        "description": "Gets or sets the time that this notification was finished processing (just before the request is sent to the consumer)",
+                        "type": "string"
+                    },
+                    "publisherId": {
+                        "description": "Gets or sets the identifier of the publisher that raised this event.",
+                        "type": "string"
+                    },
+                    "publisherInputs": {
+                        "description": "Gets or sets this notification detail's publisher inputs.",
+                        "type": "object"
+                    },
+                    "queuedDate": {
+                        "description": "Gets or sets the time that this notification was queued (created)",
+                        "type": "string"
+                    },
+                    "request": {
+                        "description": "Gets or sets this notification detail's request.",
+                        "type": "string"
+                    },
+                    "requestAttempts": {
+                        "description": "Number of requests attempted to be sent to the consumer",
+                        "type": "integer"
+                    },
+                    "requestDuration": {
+                        "description": "Duration of the request to the consumer in seconds",
+                        "type": "number"
+                    },
+                    "response": {
+                        "description": "Gets or sets this notification detail's reponse.",
+                        "type": "string"
+                    }
+                }
+            },
+            "consumerInputs": {
+                "type": "object"
+            },
+            "publisherInputs": {
+                "type": "object"
+            },
+            "NotificationResultsSummaryDetail": {
+                "type": "object",
+                "properties": {
+                    "notificationCount": {
+                        "description": "Count of notification sent out with a matching result.",
+                        "type": "integer"
+                    },
+                    "result": {
+                        "description": "Result of the notification",
+                        "type": ""
+                    }
+                }
+            },
+            "NotificationsQuery": {
+                "type": "object",
+                "properties": {
+                    "associatedSubscriptions": {
+                        "description": "The subscriptions associated with the notifications returned from the query",
+                        "type": "array"
+                    },
+                    "includeDetails": {
+                        "description": "If true, we will return all notification history for the query provided; otherwise, the summary is returned.",
+                        "type": "boolean"
+                    },
+                    "maxCreatedDate": {
+                        "description": "Optional maximum date at which the notification was created",
+                        "type": "string"
+                    },
+                    "maxResults": {
+                        "description": "Optional maximum number of overall results to include",
+                        "type": "integer"
+                    },
+                    "maxResultsPerSubscription": {
+                        "description": "Optional maximum number of results for each subscription. Only takes effect when a list of subscription ids is supplied in the query.",
+                        "type": "integer"
+                    },
+                    "minCreatedDate": {
+                        "description": "Optional minimum date at which the notification was created",
+                        "type": "string"
+                    },
+                    "publisherId": {
+                        "description": "Gets or sets the identifier of the publisher that raised this event.",
+                        "type": "string"
+                    },
+                    "results": {
+                        "description": "Results from the query",
+                        "type": "array"
+                    },
+                    "resultType": {
+                        "description": "Optional notification result type to filter results to",
+                        "type": ""
+                    },
+                    "status": {
+                        "description": "Status of the notification",
+                        "type": ""
+                    },
+                    "subscriptionIds": {
+                        "description": "Optional list of subscription ids to restrict the results to",
+                        "type": "array"
+                    },
+                    "summary": {
+                        "description": "Summary of notifications - the count of each result type (success, fail, ..).",
+                        "type": "array"
+                    }
+                }
+            },
+            "associatedSubscriptions": {
+                "type": "array"
+            },
+            "results": {
+                "type": "array"
+            },
+            "subscriptionIds": {
+                "type": "array"
+            },
+            "summary": {
+                "type": "array"
+            },
+            "NotificationSummary": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "description": "Results from the query",
+                        "type": "array"
+                    },
+                    "subscriptionId": {
+                        "description": "The subscription id associated with this notification",
+                        "type": "string"
+                    }
+                }
+            },
+            "Publisher": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "Reference Links",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "Gets or sets this consumer's localized description.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Gets or sets this consumer's identifier.",
+                        "type": "string"
+                    },
+                    "inputDescriptors": {
+                        "description": "Gets or sets this consumer's input descriptors.",
+                        "type": "array"
+                    },
+                    "name": {
+                        "description": "Gets or sets this consumer's localized name.",
+                        "type": "string"
+                    },
+                    "serviceInstanceType": {
+                        "description": "The service instance type of the first party publisher.",
+                        "type": "string"
+                    },
+                    "supportedEvents": {
+                        "description": "Gets this publisher's supported event types.",
+                        "type": "array"
+                    },
+                    "url": {
+                        "description": "The url for this resource",
+                        "type": "string"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    }
+                }
+            },
+            "supportedEvents": {
+                "type": "array"
+            },
+            "PublisherEvent": {
+                "type": "object",
+                "properties": {
+                    "diagnostics": {
+                        "description": "Add key\/value pairs which will be stored with a published notification in the SH service DB.  This key\/value pairs are for diagnostic purposes only and will have not effect on the delivery of a notificaton.",
+                        "type": "object"
+                    },
+                    "Event": {
+                        "description": "Encapsulates the properties of an event.",
+                        "type": "object"
+                    },
+                    "event": {
+                        "description": "Gets or sets this notification detail's event content.",
+                        "type": ""
+                    },
+                    "notificationId": {
+                        "description": "Gets or sets the id of the notification.",
+                        "type": "integer"
+                    },
+                    "otherResourceVersions": {
+                        "description": "Gets or sets the array of older supported resource versions.",
+                        "type": "array"
+                    },
+                    "publisherInputFilters": {
+                        "description": "Optional publisher-input filters which restricts the set of subscriptions which are triggered by the event",
+                        "type": "array"
+                    }
+                }
+            },
+            "diagnostics": {
+                "type": "object"
+            },
+            "otherResourceVersions": {
+                "type": "array"
+            },
+            "publisherInputFilters": {
+                "type": "array"
+            },
+            "PublishersQuery": {
+                "type": "object",
+                "properties": {
+                    "publisherIds": {
+                        "description": "Optional list of publisher ids to restrict the results to",
+                        "type": "array"
+                    },
+                    "publisherInputs": {
+                        "description": "Gets or sets this notification detail's publisher inputs.",
+                        "type": "object"
+                    },
+                    "results": {
+                        "description": "Results from the query",
+                        "type": "array"
+                    }
+                }
+            },
+            "publisherIds": {
+                "type": "array"
+            },
+            "ReferenceLinks": {
+                "type": "object",
+                "properties": {
+                    "links": {
+                        "description": "The readonly view of the links.  Because Reference links are readonly, we only want to expose them as read only.",
+                        "type": "object"
+                    }
+                }
+            },
+            "links": {
+                "type": "object"
+            },
+            "ResourceContainer": {
+                "type": "object",
+                "properties": {
+                    "baseUrl": {
+                        "description": "Gets or sets the container's base URL, i.e. the URL of the host (collection, application, or deploument) containing the container resource.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Gets or sets this consumer's identifier.",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Gets or sets this consumer's localized name.",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "The url for this resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "Subscription": {
+                "type": "object",
+                "properties": {
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    },
+                    "_links": {
+                        "description": "Reference Links",
+                        "type": ""
+                    },
+                    "actionDescription": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "consumerActionId": {
+                        "description": "Gets or sets this notification detail's consumer action identifier.",
+                        "type": "string"
+                    },
+                    "consumerId": {
+                        "description": "Gets or sets the identifier of the consumer to which this action belongs.",
+                        "type": "string"
+                    },
+                    "consumerInputs": {
+                        "description": "Gets or sets this notification detail's consumer inputs.",
+                        "type": "object"
+                    },
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "createdDate": {
+                        "description": "Gets or sets the UTC-based date and time that this event was created.",
+                        "type": "string"
+                    },
+                    "eventDescription": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "eventType": {
+                        "description": "Gets or sets the type of this event.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Gets or sets this consumer's identifier.",
+                        "type": "string"
+                    },
+                    "modifiedBy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "modifiedDate": {
+                        "description": "Gets or sets date and time that this result was last modified.",
+                        "type": "string"
+                    },
+                    "probationRetries": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "publisherId": {
+                        "description": "Gets or sets the identifier of the publisher that raised this event.",
+                        "type": "string"
+                    },
+                    "publisherInputs": {
+                        "description": "Gets or sets this notification detail's publisher inputs.",
+                        "type": "object"
+                    },
+                    "resourceVersion": {
+                        "description": "Gets or sets the version of the data associated with this event.",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "Status of the notification",
+                        "type": ""
+                    },
+                    "subscriber": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "url": {
+                        "description": "The url for this resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "SubscriptionsQuery": {
+                "type": "object",
+                "properties": {
+                    "consumerActionId": {
+                        "description": "Gets or sets this notification detail's consumer action identifier.",
+                        "type": "string"
+                    },
+                    "consumerId": {
+                        "description": "Gets or sets the identifier of the consumer to which this action belongs.",
+                        "type": "string"
+                    },
+                    "consumerInputFilters": {
+                        "description": "Filter for subscription consumer inputs",
+                        "type": "array"
+                    },
+                    "eventType": {
+                        "description": "Gets or sets the type of this event.",
+                        "type": "string"
+                    },
+                    "publisherId": {
+                        "description": "Gets or sets the identifier of the publisher that raised this event.",
+                        "type": "string"
+                    },
+                    "publisherInputFilters": {
+                        "description": "Optional publisher-input filters which restricts the set of subscriptions which are triggered by the event",
+                        "type": "array"
+                    },
+                    "results": {
+                        "description": "Results from the query",
+                        "type": "array"
+                    },
+                    "subscriberId": {
+                        "description": "The subscriber Id  associated with this notification. This is the last identity who touched in the subscription. In case of test notifications it can be the tester if the subscription is not created yet.",
+                        "type": "string"
+                    }
+                }
+            },
+            "consumerInputFilters": {
+                "type": "array"
+            },
+            "VersionedResource": {
+                "type": "object",
+                "properties": {
+                    "compatibleWith": {
+                        "description": "Gets or sets the reference to the compatible version.",
+                        "type": "string"
+                    },
+                    "resource": {
+                        "description": "Gets or sets the data associated with this event.",
+                        "type": "object"
+                    },
+                    "resourceVersion": {
+                        "description": "Gets or sets the version of the data associated with this event.",
+                        "type": "string"
+                    }
+                }
+            },
+            "VssJsonCollectionWrapper": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "The value to store for this input",
+                        "type": "string"
+                    }
+                }
+            },
+            "VssJsonCollectionWrapperBase": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    }
+}
