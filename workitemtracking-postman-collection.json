@@ -1,0 +1,879 @@
+{
+    "id": "3a43c0048f78bc12e23df74c10083f1e",
+    "name": "WorkItemTracking",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b3b802b1ad84391b473d442398217c5e",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/artifactlinktypes",
+            "description": "Get the workItemTracking toolTypes outboundLinks of type WorkItem",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "7335282e72c8fd76dee308521afeb856",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/artifacturiquery",
+            "description": "Gets the results of the work item ids linked to the artifact uri",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "c094cb44747999f424a180697e2d828e",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/attachments",
+            "description": "Uploads an attachment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fileName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uploadType",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "areaPath",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "22656437e9952e4e648ca831a174ffdc",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/attachments\/{id}",
+            "description": "Downloads an attachment\n\n#### Sample code\n\n             *[C# (DownloadAttachment method)](https:\/\/github.com\/Microsoft\/vsts-dotnet-samples\/blob\/master\/ClientLibrary\/Snippets\/Microsoft.TeamServices.Samples.Client\/WorkItemTracking\/AttachmentsSample.cs#L69)",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Attachment ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "56ee3427fac916e74c1b63eb80a0a2af",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/classificationnodes\/{structureGroup}\/{*path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "structureGroup",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "path",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "7868e5a5a4007cab3b47e944a11066d4",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/classificationnodes\/{structureGroup}\/{*path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "structureGroup",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "path",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "reclassifyId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "d764776b737f5a4feafa890f460431c3",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/classificationnodes\/{structureGroup}\/{*path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "structureGroup",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "path",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "depth",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "0ab6eee4c9ad72d3b43f5ccdf4a053a9",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/classificationnodes\/{structureGroup}\/{*path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "structureGroup",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "path",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "d02db84563f8dea2446ceca201143899",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/classificationnodes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "depth",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "3d8bfeaa2df0d33b430dbf104c670f53",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/workItems\/{id}\/comments\/{revision}",
+            "description": "Returns comment for a work item at the specified revision",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Attachment ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "revision",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "c60a0647ec847516c969bb4d2437b801",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/workItems\/{id}\/comments",
+            "description": "Returns specified number of comments for a work item from the specified revision",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Attachment ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromRevision",
+                    "description": "Revision from which comments are to be fetched",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "top",
+                    "description": "The number of comments to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "order",
+                    "description": "Ascending or descending by revision id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "75c36b8a63d448717e35c0a41d6eb13b",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/fields\/{fieldNameOrRefName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fieldNameOrRefName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "dd5f38c5e1156556ecf4297b2828d922",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/fields\/{fieldNameOrRefName}",
+            "description": "Gets information on a specific field.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fieldNameOrRefName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "4d466211cf798bfd828f720f1aabfa47",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/fields\/{fieldNameOrRefName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fieldNameOrRefName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "960c838f75e39d719fd38ef96a07ec83",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/fields",
+            "description": "Returns information for all fields.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "expand",
+                    "description": "Use ExtensionFields to include extension fields, otherwise exclude them. Unless the feature flag for this parameter is enabled, extension fields are always included.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "32cfa70d0d4a9b228e9b87b7646dbc49",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/queries\/{query}",
+            "description": "Creates a query, or moves a query.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "query",
+                    "description": "The parent path for the query to create.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "77302bfe7be497136051491df6a9b409",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/queries\/{query}",
+            "description": "Delete a query or a folder",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "query",
+                    "description": "The parent path for the query to create.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        },
+        {
+            "id": "675aa0b2a3984811949e0405d2c7cd84",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/queries\/{query}",
+            "description": "Retrieves an individual query and its children",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "query",
+                    "description": "The parent path for the query to create.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "expand",
+                    "description": "Use ExtensionFields to include extension fields, otherwise exclude them. Unless the feature flag for this parameter is enabled, extension fields are always included.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "depth",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includeDeleted",
+                    "description": "Include deleted queries and folders",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "rawModeData": ""
+        }
+    ]
+}
