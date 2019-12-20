@@ -1,0 +1,625 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "4.1",
+        "title": "Npm",
+        "description": "",
+        "termsOfService": "https:\/\/go.microsoft.com\/fwlink\/?LinkId=329770"
+    },
+    "servers": [
+        "http:\/\/fabrikam-fiber-inc.visualstudio.com\/"
+    ],
+    "paths": {
+        "\/_apis\/packaging\/feeds\/{feedId}\/npm\/packages\/@{packageScope}\/{unscopedPackageName}\/versions\/{packageVersion}\/content": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "ContentGetContentScopedPackage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageScope",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "unscopedPackageName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageVersion",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Package"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/packaging\/feeds\/{feedId}\/npm\/packages\/{packageName}\/versions\/{packageVersion}\/content": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "ContentGetContentUnscopedPackage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageVersion",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Package"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/packaging\/feeds\/{feedId}\/npm\/packagesbatch": {
+            "post": {
+                "summary": "",
+                "description": "Update several packages from a single feed in a single request. The updates to the packages do not happen atomically.",
+                "operationId": "PackagesbatchUpdate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Package"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/packaging\/feeds\/{feedId}\/npm\/packages\/@{packageScope}\/{unscopedPackageName}\/versions\/{packageVersion}\/readme": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "ReadmeGetReadmeScopedPackage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageScope",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "unscopedPackageName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageVersion",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Package"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/packaging\/feeds\/{feedId}\/npm\/packages\/{packageName}\/versions\/{packageVersion}\/readme": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "ReadmeGetReadmeUnscopedPackage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageVersion",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Package"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/packaging\/feeds\/{feedId}\/npm\/{packageName}\/versions\/{packageVersion}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "VersionsGetPackageInfo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageVersion",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Package"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "",
+                "description": "",
+                "operationId": "VersionsUnpublishPackage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageVersion",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Package"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "summary": "",
+                "description": "",
+                "operationId": "VersionsUpdatePackage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageVersion",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Package"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/_apis\/packaging\/feeds\/{feedId}\/npm\/@{packageScope}\/{unscopedPackageName}\/versions\/{packageVersion}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "VersionsGetScopedPackageInfo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageScope",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "unscopedPackageName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageVersion",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Package"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "",
+                "description": "",
+                "operationId": "VersionsUnpublishScopedPackage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageScope",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "unscopedPackageName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageVersion",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Package"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "summary": "",
+                "description": "",
+                "operationId": "VersionsUpdateScopedPackage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageScope",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "unscopedPackageName",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "packageVersion",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Package"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "BatchDeprecateData": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "Deprecate message that will be added to packages",
+                        "type": "string"
+                    }
+                }
+            },
+            "BatchOperationData": {
+                "type": "object"
+            },
+            "JsonPatchOperation": {
+                "type": "object",
+                "properties": {
+                    "from": {
+                        "description": "The path to copy from for the Move\/Copy operation.",
+                        "type": "string"
+                    },
+                    "op": {
+                        "description": "The patch operation",
+                        "type": ""
+                    },
+                    "path": {
+                        "description": "The path for the operation",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "The value for the operation. This is either a primitive or a JToken.",
+                        "type": "object"
+                    }
+                }
+            },
+            "value": {
+                "type": "object"
+            },
+            "MinimalPackageDetails": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Package name.",
+                        "type": "string"
+                    },
+                    "version": {
+                        "description": "Package version.",
+                        "type": "string"
+                    }
+                }
+            },
+            "NpmPackagesBatchRequest": {
+                "type": "object",
+                "properties": {
+                    "BatchOperationData": {
+                        "description": "Do not attempt to use this type to create a new BatchOperationData. This type does not contain sufficient fields to create a new batch operation data.",
+                        "type": "object"
+                    },
+                    "data": {
+                        "description": "Data required to perform the operation. This is optional based on type of operation. Use BatchPromoteData if performing a promote operation.",
+                        "type": ""
+                    },
+                    "operation": {
+                        "description": "Type of operation that needs to be performed on packages.",
+                        "type": ""
+                    },
+                    "packages": {
+                        "description": "The packages onto which the operation will be performed.",
+                        "type": "array"
+                    }
+                }
+            },
+            "packages": {
+                "type": "array"
+            },
+            "Package": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "deprecateMessage": {
+                        "description": "Deprecated message, if any, for the package",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Package name.",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "The display name of the package",
+                        "type": "string"
+                    },
+                    "unpublishedDate": {
+                        "description": "If and when the package was deleted",
+                        "type": "string"
+                    },
+                    "version": {
+                        "description": "Package version.",
+                        "type": "string"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    }
+                }
+            },
+            "_links": {
+                "type": "object"
+            },
+            "PackageVersionDetails": {
+                "type": "object",
+                "properties": {
+                    "deprecateMessage": {
+                        "description": "Deprecated message, if any, for the package",
+                        "type": "string"
+                    },
+                    "JsonPatchOperation": {
+                        "description": "The JSON model for a JSON Patch operation",
+                        "type": "object"
+                    },
+                    "views": {
+                        "description": "The view to which the package version will be added",
+                        "type": ""
+                    }
+                }
+            },
+            "ReferenceLinks": {
+                "type": "object",
+                "properties": {
+                    "links": {
+                        "description": "The readonly view of the links.  Because Reference links are readonly, we only want to expose them as read only.",
+                        "type": "object"
+                    }
+                }
+            },
+            "links": {
+                "type": "object"
+            }
+        }
+    }
+}
