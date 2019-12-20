@@ -1,0 +1,3561 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "4.1",
+        "title": "Build",
+        "description": "",
+        "termsOfService": "https:\/\/go.microsoft.com\/fwlink\/?LinkId=329770"
+    },
+    "servers": [
+        "http:\/\/fabrikam-fiber-inc.visualstudio.com\/"
+    ],
+    "paths": {
+        "\/{project}\/_apis\/build\/builds\/{buildId}\/properties": {
+            "get": {
+                "summary": "",
+                "description": "Gets properties for a build.",
+                "operationId": "PropertiesGetBuildProperties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "buildId",
+                        "in": "path",
+                        "description": "The build id."
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filter to specific properties. Defaults to all properties."
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PropertiesCollection"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/{project}\/_apis\/build\/definitions\/{definitionId}\/properties": {
+            "get": {
+                "summary": "",
+                "description": "Gets properties for a definition.",
+                "operationId": "PropertiesGetDefinitionProperties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project ID or project name"
+                    },
+                    {
+                        "name": "definitionId",
+                        "in": "path",
+                        "description": "The definition id."
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filter to specific properties. Defaults to all properties."
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PropertiesCollection"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AgentPoolQueue": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "pool": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    },
+                    "TaskAgentPoolReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "_links": {
+                "type": "object"
+            },
+            "pool": {
+                "type": "object"
+            },
+            "AgentPoolQueueTarget": {
+                "type": "object",
+                "properties": {
+                    "demands": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "AgentPoolQueue": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "queue": {
+                        "description": "The queue.",
+                        "type": ""
+                    },
+                    "allowScriptsAuthAccessOption": {
+                        "description": "Enables scripts and other processes launched while executing phase to access the OAuth token",
+                        "type": "boolean"
+                    },
+                    "AgentTargetExecutionOptions": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "executionOptions": {
+                        "description": "The execution options.",
+                        "type": ""
+                    }
+                }
+            },
+            "demands": {
+                "type": "array"
+            },
+            "AgentTargetExecutionOptions": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "ArtifactResource": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "data": {
+                        "description": "The type-specific resource data. For example, \"#\/10002\/5\/drop\", \"$\/drops\/5\", \"\\\\myshare\\myfolder\\mydrops\\5\"",
+                        "type": "string"
+                    },
+                    "downloadUrl": {
+                        "description": "Link to the resource. This might include things like query parameters to download as a zip file",
+                        "type": "string"
+                    },
+                    "properties": {
+                        "description": "Properties of Artifact Resource",
+                        "type": "object"
+                    },
+                    "type": {
+                        "description": "The type of the resource: File container, version control folder, UNC path, etc.",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    }
+                }
+            },
+            "properties": {
+                "type": "object"
+            },
+            "Build": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "buildNumber": {
+                        "description": "Build number\/name of the build",
+                        "type": "string"
+                    },
+                    "buildNumberRevision": {
+                        "description": "Build number revision",
+                        "type": "integer"
+                    },
+                    "controller": {
+                        "description": "The build controller. This should only be set if the definition type is Xaml.",
+                        "type": ""
+                    },
+                    "definition": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "deleted": {
+                        "description": "Indicates whether the build has been deleted.",
+                        "type": "boolean"
+                    },
+                    "deletedBy": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "deletedDate": {
+                        "description": "Date the build was deleted",
+                        "type": "string"
+                    },
+                    "deletedReason": {
+                        "description": "Description of how the build was deleted",
+                        "type": "string"
+                    },
+                    "demands": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "finishTime": {
+                        "description": "Time that the build was completed",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "keepForever": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "lastChangedBy": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "lastChangedDate": {
+                        "description": "Date the build was last changed",
+                        "type": "string"
+                    },
+                    "logs": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "orchestrationPlan": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "parameters": {
+                        "description": "Parameters for the build",
+                        "type": "string"
+                    },
+                    "plans": {
+                        "description": "Orchestration plans associated with the build (build, cleanup)",
+                        "type": "array"
+                    },
+                    "priority": {
+                        "description": "The build's priority",
+                        "type": ""
+                    },
+                    "project": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "properties": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "quality": {
+                        "description": "Quality of the xaml build (good, bad, etc.)",
+                        "type": "string"
+                    },
+                    "AgentPoolQueue": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "queue": {
+                        "description": "The queue.",
+                        "type": ""
+                    },
+                    "queueOptions": {
+                        "description": "Queue option of the build.",
+                        "type": ""
+                    },
+                    "queuePosition": {
+                        "description": "The current position of the build in the queue",
+                        "type": "integer"
+                    },
+                    "queueTime": {
+                        "description": "Time that the build was queued",
+                        "type": "string"
+                    },
+                    "reason": {
+                        "description": "Reason that the build was created",
+                        "type": ""
+                    },
+                    "repository": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "requestedBy": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "requestedFor": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "result": {
+                        "description": "The build result",
+                        "type": ""
+                    },
+                    "retainedByRelease": {
+                        "description": "Specifies if Build should be retained by Release",
+                        "type": "boolean"
+                    },
+                    "sourceBranch": {
+                        "description": "Source branch",
+                        "type": "string"
+                    },
+                    "sourceVersion": {
+                        "description": "Source version",
+                        "type": "string"
+                    },
+                    "startTime": {
+                        "description": "Time that the build was started",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "Status of the build",
+                        "type": ""
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "triggerInfo": {
+                        "description": "Sourceprovider-specific information about what triggered the build",
+                        "type": "object"
+                    },
+                    "uri": {
+                        "description": "Uri of the build",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    },
+                    "validationResults": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "BuildController": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    },
+                    "DefinitionReference": {
+                        "description": "A reference to a definition.",
+                        "type": "object"
+                    },
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "BuildLogReference": {
+                        "description": "Data representation of a build log reference",
+                        "type": "object"
+                    },
+                    "TaskOrchestrationPlanReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "TeamProjectReference": {
+                        "description": "Represents a shallow reference to a TeamProject.",
+                        "type": "object"
+                    },
+                    "PropertiesCollection": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "BuildRepository": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "controller": {
+                "type": "object"
+            },
+            "definition": {
+                "type": "object"
+            },
+            "deletedBy": {
+                "type": "object"
+            },
+            "lastChangedBy": {
+                "type": "object"
+            },
+            "logs": {
+                "type": "object"
+            },
+            "orchestrationPlan": {
+                "type": "object"
+            },
+            "plans": {
+                "type": "array"
+            },
+            "project": {
+                "type": "object"
+            },
+            "repository": {
+                "type": "object"
+            },
+            "requestedBy": {
+                "type": "object"
+            },
+            "requestedFor": {
+                "type": "object"
+            },
+            "tags": {
+                "type": "array"
+            },
+            "triggerInfo": {
+                "type": "object"
+            },
+            "validationResults": {
+                "type": "array"
+            },
+            "BuildAgent": {
+                "type": "object",
+                "properties": {
+                    "buildDirectory": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "controller": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "createdDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "enabled": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "messageQueueUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "reservedForBuild": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "server": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "status": {
+                        "description": "Status of the build",
+                        "type": ""
+                    },
+                    "statusMessage": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "updatedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "Uri of the build",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    },
+                    "XamlBuildControllerReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "XamlBuildServerReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "server": {
+                "type": "object"
+            },
+            "BuildAgentReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "BuildArtifact": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "ArtifactResource": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "resource": {
+                        "description": "The actual resource",
+                        "type": ""
+                    }
+                }
+            },
+            "BuildArtifactAddedEvent": {
+                "type": "object",
+                "properties": {
+                    "BuildArtifact": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "artifact": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "BuildBadge": {
+                "type": "object",
+                "properties": {
+                    "buildId": {
+                        "description": "Build id, if exists that this badge corresponds to",
+                        "type": "integer"
+                    },
+                    "imageUrl": {
+                        "description": "Self Url that generates SVG",
+                        "type": "string"
+                    }
+                }
+            },
+            "BuildChangesCalculatedEvent": {
+                "type": "object",
+                "properties": {
+                    "changes": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "changes": {
+                "type": "array"
+            },
+            "BuildCompletedEvent": {
+                "type": "object"
+            },
+            "BuildController": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "createdDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "enabled": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "status": {
+                        "description": "Status of the build",
+                        "type": ""
+                    },
+                    "updatedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "Uri of the build",
+                        "type": "string"
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    }
+                }
+            },
+            "BuildDefinition": {
+                "type": "object",
+                "properties": {
+                    "badgeEnabled": {
+                        "description": "Indicates whether badges are enabled for this definition",
+                        "type": "boolean"
+                    },
+                    "buildNumberFormat": {
+                        "description": "The build number format",
+                        "type": "string"
+                    },
+                    "comment": {
+                        "description": "The comment entered when saving the definition",
+                        "type": "string"
+                    },
+                    "demands": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "dropLocation": {
+                        "description": "The drop location for the definition",
+                        "type": "string"
+                    },
+                    "jobAuthorizationScope": {
+                        "description": "Gets or sets the job authorization scope for builds which are queued against this definition",
+                        "type": ""
+                    },
+                    "jobCancelTimeoutInMinutes": {
+                        "description": "Gets or sets the job cancel timeout in minutes for builds which are cancelled by user for this definition",
+                        "type": "integer"
+                    },
+                    "jobTimeoutInMinutes": {
+                        "description": "Gets or sets the job execution timeout in minutes for builds which are queued against this definition",
+                        "type": "integer"
+                    },
+                    "Build": {
+                        "description": "Data representation of a build",
+                        "type": "object"
+                    },
+                    "latestBuild": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "latestCompletedBuild": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "options": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "process": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "processParameters": {
+                        "description": "Process Parameters",
+                        "type": ""
+                    },
+                    "properties": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "repository": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "retentionRules": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "triggers": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "variableGroups": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "variables": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "BuildProcess": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "PropertiesCollection": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "BuildRepository": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "options": {
+                "type": "object"
+            },
+            "process": {
+                "type": "object"
+            },
+            "processParameters": {
+                "type": "object",
+                "properties": {
+                    "dataSourceBindings": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "inputs": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "sourceDefinitions": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "retentionRules": {
+                "type": "array"
+            },
+            "triggers": {
+                "type": "array"
+            },
+            "variableGroups": {
+                "type": "array"
+            },
+            "variables": {
+                "type": "object"
+            },
+            "BuildDefinition3_2": {
+                "type": "object",
+                "properties": {
+                    "badgeEnabled": {
+                        "description": "Indicates whether badges are enabled for this definition",
+                        "type": "boolean"
+                    },
+                    "build": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "buildNumberFormat": {
+                        "description": "The build number format",
+                        "type": "string"
+                    },
+                    "comment": {
+                        "description": "The comment entered when saving the definition",
+                        "type": "string"
+                    },
+                    "demands": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "dropLocation": {
+                        "description": "The drop location for the definition",
+                        "type": "string"
+                    },
+                    "jobAuthorizationScope": {
+                        "description": "Gets or sets the job authorization scope for builds which are queued against this definition",
+                        "type": ""
+                    },
+                    "jobCancelTimeoutInMinutes": {
+                        "description": "Gets or sets the job cancel timeout in minutes for builds which are cancelled by user for this definition",
+                        "type": "integer"
+                    },
+                    "jobTimeoutInMinutes": {
+                        "description": "Gets or sets the job execution timeout in minutes for builds which are queued against this definition",
+                        "type": "integer"
+                    },
+                    "Build": {
+                        "description": "Data representation of a build",
+                        "type": "object"
+                    },
+                    "latestBuild": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "latestCompletedBuild": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "options": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "processParameters": {
+                        "description": "Process Parameters",
+                        "type": ""
+                    },
+                    "properties": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "repository": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "retentionRules": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "triggers": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "variables": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "PropertiesCollection": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "BuildRepository": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "build": {
+                "type": "object"
+            },
+            "BuildDefinitionChangedEvent": {
+                "type": "object",
+                "properties": {
+                    "changeType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "BuildDefinition": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "definition": {
+                        "description": "The definition associated with the build",
+                        "type": ""
+                    }
+                }
+            },
+            "BuildDefinitionChangingEvent": {
+                "type": "object",
+                "properties": {
+                    "changeType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "BuildDefinition": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "newDefinition": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "originalDefinition": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "BuildDefinitionReference": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "authoredBy": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "draftOf": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "metrics": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "quality": {
+                        "description": "The quality of the definition document (draft, etc.)",
+                        "type": ""
+                    },
+                    "AgentPoolQueue": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "queue": {
+                        "description": "The queue.",
+                        "type": ""
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    },
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "DefinitionReference": {
+                        "description": "A reference to a definition.",
+                        "type": "object"
+                    },
+                    "drafts": {
+                        "description": "The list of drafts associated with this definition, if this is not a draft definition.",
+                        "type": "array"
+                    }
+                }
+            },
+            "authoredBy": {
+                "type": "object"
+            },
+            "draftOf": {
+                "type": "object"
+            },
+            "metrics": {
+                "type": "array"
+            },
+            "BuildDefinitionRevision": {
+                "type": "object",
+                "properties": {
+                    "changedBy": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "changedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "changeType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "comment": {
+                        "description": "The comment entered when saving the definition",
+                        "type": "string"
+                    },
+                    "definitionUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "changedBy": {
+                "type": "object"
+            },
+            "BuildDefinitionSourceProvider": {
+                "type": "object",
+                "properties": {
+                    "definitionUri": {
+                        "description": "Uri of the associated definition",
+                        "type": "string"
+                    },
+                    "fields": {
+                        "description": "fields associated with this build definition",
+                        "type": "object"
+                    },
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "lastModified": {
+                        "description": "The lst time this source provider was modified",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "supportedTriggerTypes": {
+                        "description": "Which trigger types are supported by this definition source provider",
+                        "type": ""
+                    }
+                }
+            },
+            "fields": {
+                "type": "object"
+            },
+            "BuildDefinitionStep": {
+                "type": "object",
+                "properties": {
+                    "alwaysRun": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "condition": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "continueOnError": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "enabled": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "environment": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "inputs": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "refName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "task": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "timeoutInMinutes": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "TaskDefinitionReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "environment": {
+                "type": "object"
+            },
+            "inputs": {
+                "type": "array"
+            },
+            "task": {
+                "type": "object"
+            },
+            "BuildDefinitionTemplate": {
+                "type": "object",
+                "properties": {
+                    "canDelete": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "category": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "icons": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "iconTaskId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "BuildDefinition": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "template": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "icons": {
+                "type": "object"
+            },
+            "BuildDefinitionTemplate3_2": {
+                "type": "object",
+                "properties": {
+                    "canDelete": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "category": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "icons": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "iconTaskId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "BuildDefinition3_2": {
+                        "description": "For back-compat with extensions that use the old Steps format instead of Process and Phases",
+                        "type": "object"
+                    },
+                    "template": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "BuildDefinitionVariable": {
+                "type": "object",
+                "properties": {
+                    "allowOverride": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isSecret": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "BuildDeletedEvent": {
+                "type": "object",
+                "properties": {
+                    "Build": {
+                        "description": "Data representation of a build",
+                        "type": "object"
+                    },
+                    "build": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "BuildDeployment": {
+                "type": "object",
+                "properties": {
+                    "deployment": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "sourceBuild": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "BuildSummary": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "XamlBuildReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "deployment": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of the resource: File container, version control folder, UNC path, etc.",
+                        "type": "string"
+                    }
+                }
+            },
+            "sourceBuild": {
+                "type": "object"
+            },
+            "BuildDestroyedEvent": {
+                "type": "object",
+                "properties": {
+                    "Build": {
+                        "description": "Data representation of a build",
+                        "type": "object"
+                    },
+                    "build": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "BuildLog": {
+                "type": "object",
+                "properties": {
+                    "createdOn": {
+                        "description": "The date the log was created.",
+                        "type": "string"
+                    },
+                    "lastChangedOn": {
+                        "description": "The date the log was last changed.",
+                        "type": "string"
+                    },
+                    "lineCount": {
+                        "description": "The number of lines in the log.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "BuildLogReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "description": "The type of the resource: File container, version control folder, UNC path, etc.",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "BuildMetric": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "description": "Scoped date of the metric",
+                        "type": "string"
+                    },
+                    "intValue": {
+                        "description": "The int value of the metric",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "scope": {
+                        "description": "The scope of the metric",
+                        "type": "string"
+                    }
+                }
+            },
+            "BuildOption": {
+                "type": "object",
+                "properties": {
+                    "definition": {
+                        "description": "The definition associated with the build",
+                        "type": ""
+                    },
+                    "enabled": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "inputs": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "BuildOptionDefinitionReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "BuildOptionDefinition": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "groups": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "inputs": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "ordinal": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "groups": {
+                "type": "array"
+            },
+            "BuildOptionDefinitionReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "BuildOptionGroupDefinition": {
+                "type": "object",
+                "properties": {
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "isExpanded": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    }
+                }
+            },
+            "BuildOptionInputDefinition": {
+                "type": "object",
+                "properties": {
+                    "defaultValue": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "groupName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "help": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "options": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "required": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "visibleRule": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "help": {
+                "type": "object"
+            },
+            "BuildPollingSummaryEvent": {
+                "type": "object"
+            },
+            "BuildProcess": {
+                "type": "object",
+                "properties": {
+                    "repositories": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "repositories": {
+                "type": "object"
+            },
+            "BuildProcessTemplate": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fileExists": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "parameters": {
+                        "description": "Parameters for the build",
+                        "type": "string"
+                    },
+                    "serverPath": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "supportedReasons": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "teamProject": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "templateType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    },
+                    "version": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "BuildQueuedEvent": {
+                "type": "object"
+            },
+            "BuildReference": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "buildNumber": {
+                        "description": "Build number\/name of the build",
+                        "type": "string"
+                    },
+                    "deleted": {
+                        "description": "Indicates whether the build has been deleted.",
+                        "type": "boolean"
+                    },
+                    "finishTime": {
+                        "description": "Time that the build was completed",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "queueTime": {
+                        "description": "Time that the build was queued",
+                        "type": "string"
+                    },
+                    "requestedFor": {
+                        "description": "The identity on whose behalf the build was queued",
+                        "type": ""
+                    },
+                    "result": {
+                        "description": "The build result",
+                        "type": ""
+                    },
+                    "startTime": {
+                        "description": "Time that the build was started",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "Status of the build",
+                        "type": ""
+                    },
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    },
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "BuildReportMetadata": {
+                "type": "object",
+                "properties": {
+                    "buildId": {
+                        "description": "Build id, if exists that this badge corresponds to",
+                        "type": "integer"
+                    },
+                    "content": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The type of the resource: File container, version control folder, UNC path, etc.",
+                        "type": "string"
+                    }
+                }
+            },
+            "BuildRepository": {
+                "type": "object",
+                "properties": {
+                    "checkoutSubmodules": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "clean": {
+                        "description": "Indicates whether to clean the target folder when getting code from the repository. This is a String so that it can reference variables.",
+                        "type": "string"
+                    },
+                    "defaultBranch": {
+                        "description": "Gets or sets the name of the default branch.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "properties": {
+                        "description": "Properties of Artifact Resource",
+                        "type": "object"
+                    },
+                    "rootFolder": {
+                        "description": "Gets or sets the root folder.",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The type of the resource: File container, version control folder, UNC path, etc.",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "BuildRequestValidationResult": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "result": {
+                        "description": "The build result",
+                        "type": ""
+                    }
+                }
+            },
+            "BuildResourceUsage": {
+                "type": "object",
+                "properties": {
+                    "distributedTaskAgents": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "paidPrivateAgentSlots": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "totalUsage": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "xamlControllers": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "BuildServer": {
+                "type": "object",
+                "properties": {
+                    "agents": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "controller": {
+                        "description": "The build controller. This should only be set if the definition type is Xaml.",
+                        "type": ""
+                    },
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "isVirtual": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "messageQueueUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "requireClientCertificates": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "status": {
+                        "description": "Status of the build",
+                        "type": ""
+                    },
+                    "statusChangedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "Uri of the build",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    },
+                    "version": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "XamlBuildControllerReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "agents": {
+                "type": "array"
+            },
+            "BuildSettings": {
+                "type": "object",
+                "properties": {
+                    "daysToKeepDeletedBuildsBeforeDestroy": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "defaultRetentionPolicy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "maximumRetentionPolicy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "RetentionPolicy": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "defaultRetentionPolicy": {
+                "type": "object"
+            },
+            "maximumRetentionPolicy": {
+                "type": "object"
+            },
+            "BuildStartedEvent": {
+                "type": "object"
+            },
+            "BuildSummary": {
+                "type": "object",
+                "properties": {
+                    "build": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "finishTime": {
+                        "description": "Time that the build was completed",
+                        "type": "string"
+                    },
+                    "keepForever": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "quality": {
+                        "description": "Quality of the xaml build (good, bad, etc.)",
+                        "type": "string"
+                    },
+                    "reason": {
+                        "description": "Reason that the build was created",
+                        "type": ""
+                    },
+                    "requestedFor": {
+                        "description": "The identity on whose behalf the build was queued",
+                        "type": ""
+                    },
+                    "startTime": {
+                        "description": "Time that the build was started",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "Status of the build",
+                        "type": ""
+                    },
+                    "XamlBuildReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "BuildTrigger": {
+                "type": "object",
+                "properties": {
+                    "triggerType": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "BuildUpdatedEvent": {
+                "type": "object",
+                "properties": {
+                    "Build": {
+                        "description": "Data representation of a build",
+                        "type": "object"
+                    },
+                    "build": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "BuildWorkspace": {
+                "type": "object",
+                "properties": {
+                    "mappings": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "mappings": {
+                "type": "array"
+            },
+            "Change": {
+                "type": "object",
+                "properties": {
+                    "author": {
+                        "description": "The author of the change.",
+                        "type": ""
+                    },
+                    "displayUri": {
+                        "description": "The location of a user-friendly representation of the resource.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "location": {
+                        "description": "The location of the full representation of the resource.",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "messageTruncated": {
+                        "description": "Indicates whether the message was truncated",
+                        "type": "boolean"
+                    },
+                    "timestamp": {
+                        "description": "A timestamp for the change.",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The type of the resource: File container, version control folder, UNC path, etc.",
+                        "type": "string"
+                    },
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "pusher": {
+                        "description": "The person or process that pushed the change.",
+                        "type": "string"
+                    }
+                }
+            },
+            "author": {
+                "type": "object"
+            },
+            "ConsoleLogEvent": {
+                "type": "object",
+                "properties": {
+                    "lines": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "timelineId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "timelineRecordId": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "lines": {
+                "type": "array"
+            },
+            "ContinuousDeploymentDefinition": {
+                "type": "object",
+                "properties": {
+                    "connectedService": {
+                        "description": "The connected service associated with the continuous deployment",
+                        "type": ""
+                    },
+                    "definition": {
+                        "description": "The definition associated with the build",
+                        "type": ""
+                    },
+                    "gitBranch": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "hostedServiceName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "project": {
+                        "description": "The team project",
+                        "type": ""
+                    },
+                    "repositoryId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "storageAccountName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subscriptionId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "website": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "webspace": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "WebApiConnectedServiceRef": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "XamlDefinitionReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "TeamProjectReference": {
+                        "description": "Represents a shallow reference to a TeamProject.",
+                        "type": "object"
+                    }
+                }
+            },
+            "connectedService": {
+                "type": "object"
+            },
+            "ContinuousIntegrationTrigger": {
+                "type": "object",
+                "properties": {
+                    "batchChanges": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "branchFilters": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "maxConcurrentBuildsPerBranch": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "pathFilters": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "pollingInterval": {
+                        "description": "The polling interval in seconds.",
+                        "type": "integer"
+                    },
+                    "pollingJobId": {
+                        "description": "This is the id of the polling job that polls the external repository.  Once the build definition is saved\/updated, this value is set.",
+                        "type": "string"
+                    }
+                }
+            },
+            "branchFilters": {
+                "type": "array"
+            },
+            "pathFilters": {
+                "type": "array"
+            },
+            "DataSourceBindingBase": {
+                "type": "object",
+                "properties": {
+                    "dataSourceName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "endpointId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "endpointUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "resultSelector": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "resultTemplate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "target": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "headers": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "parameters": {
+                "type": "object"
+            },
+            "DefinitionReference": {
+                "type": "object",
+                "properties": {
+                    "createdDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "path": {
+                        "description": "The path this definitions belongs to",
+                        "type": "string"
+                    },
+                    "project": {
+                        "description": "The team project",
+                        "type": ""
+                    },
+                    "queueStatus": {
+                        "description": "If builds can be queued from this definition",
+                        "type": ""
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "uri": {
+                        "description": "Uri of the build",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    },
+                    "TeamProjectReference": {
+                        "description": "Represents a shallow reference to a TeamProject.",
+                        "type": "object"
+                    }
+                }
+            },
+            "Demand": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Dependency": {
+                "type": "object",
+                "properties": {
+                    "event": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "scope": {
+                        "description": "The scope of the metric",
+                        "type": "string"
+                    }
+                }
+            },
+            "DeploymentBuild": {
+                "type": "object",
+                "properties": {
+                    "buildId": {
+                        "description": "Build id, if exists that this badge corresponds to",
+                        "type": "integer"
+                    }
+                }
+            },
+            "DeploymentDeploy": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "DeploymentTest": {
+                "type": "object",
+                "properties": {
+                    "runId": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "DesignerProcess": {
+                "type": "object",
+                "properties": {
+                    "phases": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "phases": {
+                "type": "array"
+            },
+            "Folder": {
+                "type": "object",
+                "properties": {
+                    "createdBy": {
+                        "description": "Process or person who created the folder",
+                        "type": ""
+                    },
+                    "createdOn": {
+                        "description": "The date the log was created.",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "lastChangedBy": {
+                        "description": "Process or person that last changed the build",
+                        "type": ""
+                    },
+                    "lastChangedDate": {
+                        "description": "Date the build was last changed",
+                        "type": "string"
+                    },
+                    "path": {
+                        "description": "The path this definitions belongs to",
+                        "type": "string"
+                    },
+                    "project": {
+                        "description": "The team project",
+                        "type": ""
+                    },
+                    "IdentityRef": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "TeamProjectReference": {
+                        "description": "Represents a shallow reference to a TeamProject.",
+                        "type": "object"
+                    }
+                }
+            },
+            "createdBy": {
+                "type": "object"
+            },
+            "GatedCheckInTrigger": {
+                "type": "object",
+                "properties": {
+                    "pathFilters": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "runContinuousIntegration": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "useWorkspaceMappings": {
+                        "description": "",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "IdentityRef": {
+                "type": "object",
+                "properties": {
+                    "directoryAlias": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "imageUrl": {
+                        "description": "Self Url that generates SVG",
+                        "type": "string"
+                    },
+                    "inactive": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isAadIdentity": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "isContainer": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "profileUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uniqueName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "InformationNode": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "description": "fields associated with this build definition",
+                        "type": "object"
+                    },
+                    "lastModifiedBy": {
+                        "description": "Process or person that last modified this node",
+                        "type": "string"
+                    },
+                    "lastModifiedDate": {
+                        "description": "Date this node was last modified",
+                        "type": "string"
+                    },
+                    "nodeId": {
+                        "description": "Node Id of this information node",
+                        "type": "integer"
+                    },
+                    "parentId": {
+                        "description": "Id of parent node (xml tree)",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "description": "The type of the resource: File container, version control folder, UNC path, etc.",
+                        "type": "string"
+                    }
+                }
+            },
+            "Issue": {
+                "type": "object",
+                "properties": {
+                    "category": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "data": {
+                "type": "object"
+            },
+            "JsonPatchDocument": {
+                "type": "object"
+            },
+            "JsonPatchOperation": {
+                "type": "object",
+                "properties": {
+                    "from": {
+                        "description": "The path to copy from for the Move\/Copy operation.",
+                        "type": "string"
+                    },
+                    "op": {
+                        "description": "The patch operation",
+                        "type": ""
+                    },
+                    "path": {
+                        "description": "The path this definitions belongs to",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "The value for the operation. This is either a primitive or a JToken.",
+                        "type": "object"
+                    }
+                }
+            },
+            "value": {
+                "type": "object"
+            },
+            "MappingDetails": {
+                "type": "object",
+                "properties": {
+                    "localPath": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "mappingType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "serverPath": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "MultipleAgentExecutionOptions": {
+                "type": "object",
+                "properties": {
+                    "maxConcurrency": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "continueOnError": {
+                        "description": "",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "Phase": {
+                "type": "object",
+                "properties": {
+                    "condition": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "dependencies": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "jobAuthorizationScope": {
+                        "description": "Gets or sets the job authorization scope for builds which are queued against this definition",
+                        "type": ""
+                    },
+                    "jobCancelTimeoutInMinutes": {
+                        "description": "Gets or sets the job cancel timeout in minutes for builds which are cancelled by user for this definition",
+                        "type": "integer"
+                    },
+                    "jobTimeoutInMinutes": {
+                        "description": "Gets or sets the job execution timeout in minutes for builds which are queued against this definition",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "steps": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "target": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "variables": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "PhaseTarget": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "dependencies": {
+                "type": "array"
+            },
+            "steps": {
+                "type": "array"
+            },
+            "target": {
+                "type": "object"
+            },
+            "PhaseTarget": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "dataSourceBindings": {
+                "type": "array"
+            },
+            "sourceDefinitions": {
+                "type": "array"
+            },
+            "PropertiesCollection": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "The count of properties in the collection.",
+                        "type": "integer"
+                    },
+                    "item": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "keys": {
+                        "description": "The set of keys in the collection.",
+                        "type": "array"
+                    },
+                    "values": {
+                        "description": "The set of values in the collection.",
+                        "type": "array"
+                    }
+                }
+            },
+            "item": {
+                "type": "object"
+            },
+            "keys": {
+                "type": "array"
+            },
+            "values": {
+                "type": "array"
+            },
+            "PullRequestTrigger": {
+                "type": "object",
+                "properties": {
+                    "branchFilters": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "Forks": {
+                        "description": "Represents the ability to build forks of the selected repository.",
+                        "type": "object"
+                    },
+                    "forks": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "RealtimeBuildEvent": {
+                "type": "object",
+                "properties": {
+                    "buildId": {
+                        "description": "Build id, if exists that this badge corresponds to",
+                        "type": "integer"
+                    }
+                }
+            },
+            "ReferenceLinks": {
+                "type": "object",
+                "properties": {
+                    "links": {
+                        "description": "The readonly view of the links.  Because Reference links are readonly, we only want to expose them as read only.",
+                        "type": "object"
+                    }
+                }
+            },
+            "links": {
+                "type": "object"
+            },
+            "ResourceRef": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "RetentionPolicy": {
+                "type": "object",
+                "properties": {
+                    "artifacts": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "artifactTypesToDelete": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "branches": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "daysToKeep": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "deleteBuildRecord": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "deleteTestResults": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "minimumToKeep": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "artifacts": {
+                "type": "array"
+            },
+            "artifactTypesToDelete": {
+                "type": "array"
+            },
+            "branches": {
+                "type": "array"
+            },
+            "Schedule": {
+                "type": "object",
+                "properties": {
+                    "branchFilters": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "daysToBuild": {
+                        "description": "Days for a build (flags enum for days of the week)",
+                        "type": ""
+                    },
+                    "scheduleJobId": {
+                        "description": "The Job Id of the Scheduled job that will queue the scheduled build. Since a single trigger can have multiple schedules and we want a single job to process a single schedule (since each schedule has a list of branches to build), the schedule itself needs to define the Job Id. This value will be filled in when a definition is added or updated.  The UI does not provide it or use it.",
+                        "type": "string"
+                    },
+                    "startHours": {
+                        "description": "Local timezone hour to start",
+                        "type": "integer"
+                    },
+                    "startMinutes": {
+                        "description": "Local timezone minute to start",
+                        "type": "integer"
+                    },
+                    "timeZoneId": {
+                        "description": "Time zone of the build schedule (string representation of the time zone id)",
+                        "type": "string"
+                    }
+                }
+            },
+            "ScheduleTrigger": {
+                "type": "object",
+                "properties": {
+                    "schedules": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "schedules": {
+                "type": "array"
+            },
+            "ServerTarget": {
+                "type": "object",
+                "properties": {
+                    "executionOptions": {
+                        "description": "The execution options.",
+                        "type": ""
+                    },
+                    "ServerTargetExecutionOptions": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "executionOptions": {
+                "type": "object"
+            },
+            "ServerTargetExecutionOptions": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "SvnMappingDetails": {
+                "type": "object",
+                "properties": {
+                    "depth": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "ignoreExternals": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "localPath": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "serverPath": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SvnWorkspace": {
+                "type": "object",
+                "properties": {
+                    "mappings": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "SyncBuildCompletedEvent": {
+                "type": "object"
+            },
+            "SyncBuildStartedEvent": {
+                "type": "object"
+            },
+            "TaskAgentPoolReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "isHosted": {
+                        "description": "Gets or sets a value indicating whether or not this pool is managed by the service.",
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    }
+                }
+            },
+            "TaskDefinitionReference": {
+                "type": "object",
+                "properties": {
+                    "definitionType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "versionSpec": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TaskInputDefinitionBase": {
+                "type": "object",
+                "properties": {
+                    "defaultValue": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "groupName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "helpMarkDown": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "options": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "properties": {
+                        "description": "Properties of Artifact Resource",
+                        "type": "object"
+                    },
+                    "required": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "type": {
+                        "description": "The type of the resource: File container, version control folder, UNC path, etc.",
+                        "type": "string"
+                    },
+                    "validation": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "visibleRule": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "TaskInputValidation": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "aliases": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "validation": {
+                "type": "object"
+            },
+            "TaskInputValidation": {
+                "type": "object",
+                "properties": {
+                    "expression": {
+                        "description": "Conditional expression",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TaskOrchestrationPlanGroupReference": {
+                "type": "object",
+                "properties": {
+                    "planGroup": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TaskOrchestrationPlanGroupsStartedEvent": {
+                "type": "object",
+                "properties": {
+                    "planGroups": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "planGroups": {
+                "type": "array"
+            },
+            "TaskOrchestrationPlanReference": {
+                "type": "object",
+                "properties": {
+                    "orchestrationType": {
+                        "description": "Orchestration Type for Build (build, cleanup etc.)",
+                        "type": "integer"
+                    },
+                    "planId": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TaskReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "version": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TaskSourceDefinitionBase": {
+                "type": "object",
+                "properties": {
+                    "authKey": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "endpoint": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "keySelector": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "selector": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "target": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TeamProjectReference": {
+                "type": "object",
+                "properties": {
+                    "abbreviation": {
+                        "description": "Project abbreviation.",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "state": {
+                        "description": "Project state.",
+                        "type": ""
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    },
+                    "visibility": {
+                        "description": "Project visibility.",
+                        "type": ""
+                    }
+                }
+            },
+            "Timeline": {
+                "type": "object",
+                "properties": {
+                    "lastChangedBy": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "lastChangedOn": {
+                        "description": "The date the log was last changed.",
+                        "type": "string"
+                    },
+                    "records": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "records": {
+                "type": "array"
+            },
+            "TimelineRecord": {
+                "type": "object",
+                "properties": {
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "changeId": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "currentOperation": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "details": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "errorCount": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "finishTime": {
+                        "description": "Time that the build was completed",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "issues": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "lastModified": {
+                        "description": "The lst time this source provider was modified",
+                        "type": "string"
+                    },
+                    "BuildLogReference": {
+                        "description": "Data representation of a build log reference",
+                        "type": "object"
+                    },
+                    "log": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "order": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "parentId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "percentComplete": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "result": {
+                        "description": "The build result",
+                        "type": ""
+                    },
+                    "resultCode": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "startTime": {
+                        "description": "Time that the build was started",
+                        "type": "string"
+                    },
+                    "state": {
+                        "description": "Project state.",
+                        "type": ""
+                    },
+                    "TaskReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "task": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "type": {
+                        "description": "The type of the resource: File container, version control folder, UNC path, etc.",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    },
+                    "warningCount": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "workerName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "TimelineReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "details": {
+                "type": "object"
+            },
+            "issues": {
+                "type": "array"
+            },
+            "TimelineRecordsUpdatedEvent": {
+                "type": "object",
+                "properties": {
+                    "timelineRecords": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "timelineRecords": {
+                "type": "array"
+            },
+            "TimelineReference": {
+                "type": "object",
+                "properties": {
+                    "changeId": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "VariableGroup": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The type of the resource: File container, version control folder, UNC path, etc.",
+                        "type": "string"
+                    },
+                    "variables": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "VariableGroupReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    }
+                }
+            },
+            "VariableMultipliersAgentExecutionOptions": {
+                "type": "object",
+                "properties": {
+                    "maxConcurrency": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "multipliers": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "continueOnError": {
+                        "description": "",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "multipliers": {
+                "type": "array"
+            },
+            "VariableMultipliersServerExecutionOptions": {
+                "type": "object",
+                "properties": {
+                    "maxConcurrency": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "multipliers": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "continueOnError": {
+                        "description": "",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "VssJsonCollectionWrapper": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "VssJsonCollectionWrapperBase": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "The count of properties in the collection.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "WebApiConnectedServiceRef": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkspaceMapping": {
+                "type": "object",
+                "properties": {
+                    "definitionUri": {
+                        "description": "Uri of the associated definition",
+                        "type": "string"
+                    },
+                    "depth": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "localItem": {
+                        "description": "local location of the definition",
+                        "type": "string"
+                    },
+                    "mappingType": {
+                        "description": "type of workspace mapping",
+                        "type": ""
+                    },
+                    "serverItem": {
+                        "description": "Server location of the definition",
+                        "type": "string"
+                    },
+                    "workspaceId": {
+                        "description": "Id of the workspace",
+                        "type": "integer"
+                    }
+                }
+            },
+            "WorkspaceTemplate": {
+                "type": "object",
+                "properties": {
+                    "definitionUri": {
+                        "description": "Uri of the associated definition",
+                        "type": "string"
+                    },
+                    "lastModifiedBy": {
+                        "description": "Process or person that last modified this node",
+                        "type": "string"
+                    },
+                    "lastModifiedDate": {
+                        "description": "Date this node was last modified",
+                        "type": "string"
+                    },
+                    "mappings": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "workspaceId": {
+                        "description": "Id of the workspace",
+                        "type": "integer"
+                    }
+                }
+            },
+            "XamlBuildControllerReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "XamlBuildDefinition": {
+                "type": "object",
+                "properties": {
+                    "ReferenceLinks": {
+                        "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http:\/\/localhost:8080\/tfs\/DefaultCollection\/_apis\/wit\/workItems\/1\" } }`",
+                        "type": "object"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "batchSize": {
+                        "description": "Batch size of the definition",
+                        "type": "integer"
+                    },
+                    "buildArgs": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "continuousIntegrationQuietPeriod": {
+                        "description": "The continuous integration quiet period",
+                        "type": "integer"
+                    },
+                    "BuildController": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "controller": {
+                        "description": "The build controller. This should only be set if the definition type is Xaml.",
+                        "type": ""
+                    },
+                    "createdOn": {
+                        "description": "The date the log was created.",
+                        "type": "string"
+                    },
+                    "defaultDropLocation": {
+                        "description": "Default drop location for builds from this definition",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "lastBuild": {
+                        "description": "The last build on this definition",
+                        "type": ""
+                    },
+                    "BuildRepository": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "repository": {
+                        "description": "The repository",
+                        "type": ""
+                    },
+                    "supportedReasons": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "triggerType": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "XamlBuildReference": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "lastBuild": {
+                "type": "object"
+            },
+            "XamlBuildReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "XamlBuildServerReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "XamlDefinitionReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Full http link to the resource",
+                        "type": "string"
+                    }
+                }
+            },
+            "YamlProcess": {
+                "type": "object",
+                "properties": {
+                    "yamlFilename": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "errors": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "BuildProcessResources": {
+                        "description": "Represents resources used by a build process.",
+                        "type": "object"
+                    },
+                    "resources": {
+                        "description": "The resources used by the build definition.",
+                        "type": ""
+                    }
+                }
+            },
+            "AgentPoolQueueReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Id of the resource",
+                        "type": "integer"
+                    }
+                }
+            },
+            "AuthorizationHeader": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of the linked resource (definition name, controller name, etc.)",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "drafts": {
+                "type": "array"
+            },
+            "BuildProcessResources": {
+                "type": "object",
+                "properties": {
+                    "endpoints": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "files": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "queues": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "endpoints": {
+                "type": "array"
+            },
+            "files": {
+                "type": "array"
+            },
+            "queues": {
+                "type": "array"
+            },
+            "BuildSourceProviderAttributes": {
+                "type": "object",
+                "properties": {
+                    "defaultPollingInterval": {
+                        "description": "The default interval to wait between polls",
+                        "type": "integer"
+                    },
+                    "isBatchChangesSupported": {
+                        "description": "If this repository type supports batch changes",
+                        "type": "boolean"
+                    },
+                    "isBranchFilterRequired": {
+                        "description": "If the branch filters are required",
+                        "type": "boolean"
+                    },
+                    "isBranchFilterSupported": {
+                        "description": "If this repository type supports branch filters",
+                        "type": "boolean"
+                    },
+                    "isBranchQuerySupported": {
+                        "description": "If the branch filters can be queried",
+                        "type": "boolean"
+                    },
+                    "isBuildForksSupported": {
+                        "description": "If this repository type supports building forks",
+                        "type": "boolean"
+                    },
+                    "isExternal": {
+                        "description": "Whether the repository type is external to TFS \/ VSTS servers",
+                        "type": "boolean"
+                    },
+                    "isHostedOnly": {
+                        "description": "If this source provider requires a hosted deployment in an on prem environment",
+                        "type": "boolean"
+                    },
+                    "isPathFilterRequired": {
+                        "description": "If the path filters are required",
+                        "type": "boolean"
+                    },
+                    "isPathFilterSupported": {
+                        "description": "If this repository type supports path filters",
+                        "type": "boolean"
+                    },
+                    "isPollingSupported": {
+                        "description": "If this repository supports polling as a means to detect changes",
+                        "type": "boolean"
+                    },
+                    "isYamlSupported": {
+                        "description": "Whether YAML builds are supported with this source provider",
+                        "type": "boolean"
+                    },
+                    "repositoryType": {
+                        "description": "The repository type name (see: WellKnownRepositoryTypes)",
+                        "type": "string"
+                    },
+                    "supportedWebhookTriggerTypes": {
+                        "description": "The supported webhook triggers",
+                        "type": ""
+                    },
+                    "supportsSourceLinks": {
+                        "description": "Whether the repository supports links to source code",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "headers": {
+                "type": "array"
+            },
+            "Forks": {
+                "type": "object",
+                "properties": {
+                    "allowSecrets": {
+                        "description": "Indicates whether a build should use secrets when building forks of the selected repository.",
+                        "type": "boolean"
+                    },
+                    "enabled": {
+                        "description": "",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "RecreateSubscriptionResult": {
+                "type": "object",
+                "properties": {
+                    "eventType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "repositoryType": {
+                        "description": "The repository type name (see: WellKnownRepositoryTypes)",
+                        "type": "string"
+                    }
+                }
+            },
+            "ResourceReference": {
+                "type": "object",
+                "properties": {
+                    "alias": {
+                        "description": "An alias to be used when referencing the resource.",
+                        "type": "string"
+                    }
+                }
+            },
+            "SecureFileReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ServiceEndpointReference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "aliases": {
+                "type": "array"
+            },
+            "errors": {
+                "type": "array"
+            }
+        }
+    }
+}
