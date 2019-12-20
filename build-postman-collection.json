@@ -1,0 +1,117 @@
+{
+    "id": "2d2f0c711cbbdd94af52e49c6a0025c1",
+    "name": "Build",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "bacfcdef83d5517e9a3fb0dfe9f9af94",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/build\/builds\/{buildId}\/properties",
+            "description": "Gets properties for a build.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "buildId",
+                    "description": "The build id.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "Filter to specific properties. Defaults to all properties.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "2d2f0c711cbbdd94af52e49c6a0025c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "6fc8b5b8dabc39dded094046f1bb3c3b",
+            "name": "",
+            "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/build\/definitions\/{definitionId}\/properties",
+            "description": "Gets properties for a definition.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project",
+                    "description": "Project ID or project name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "definitionId",
+                    "description": "The definition id.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "Filter to specific properties. Defaults to all properties.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "2d2f0c711cbbdd94af52e49c6a0025c1",
+            "rawModeData": ""
+        }
+    ]
+}
