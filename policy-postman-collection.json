@@ -1,5 +1,5 @@
 {
-    "id": "4702c6bd3d4b5b610983ec06b253a642",
+    "id": "50dc24059ca35006f9e37ecc5a0ec8cf",
     "name": "Policy",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b975b8192d84f5248657023960bf3ff9",
+            "id": "780d9d114efdc7481d9d56b489ab8c8f",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/policy\/evaluations\/{evaluationId}",
             "description": "",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4702c6bd3d4b5b610983ec06b253a642",
+            "collectionId": "50dc24059ca35006f9e37ecc5a0ec8cf",
             "rawModeData": ""
         },
         {
-            "id": "5b812425e0f86c4ff42ebc9ed1dc78db",
+            "id": "a77f9b0555b166463d7f74de7ad06867",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/policy\/evaluations\/{evaluationId}",
             "description": "",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4702c6bd3d4b5b610983ec06b253a642",
+            "collectionId": "50dc24059ca35006f9e37ecc5a0ec8cf",
             "rawModeData": ""
         },
         {
-            "id": "324b1fee3fff486b2be02b6982319570",
+            "id": "32848ed953d20be5eac92dad9d3c8cb2",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/policy\/evaluations",
             "description": "",
@@ -162,11 +162,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4702c6bd3d4b5b610983ec06b253a642",
+            "collectionId": "50dc24059ca35006f9e37ecc5a0ec8cf",
             "rawModeData": ""
         },
         {
-            "id": "0625cb8cc68a1a964cbd4aee4c8e9bed",
+            "id": "6640b518a6e82434745711af963ef3aa",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/policy\/types\/{typeId}",
             "description": "",
@@ -207,11 +207,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4702c6bd3d4b5b610983ec06b253a642",
+            "collectionId": "50dc24059ca35006f9e37ecc5a0ec8cf",
             "rawModeData": ""
         },
         {
-            "id": "2648eebc3536bd558326ebe5c9e92ad5",
+            "id": "83969a7987a4481da95d848915ce44bb",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/policy\/types",
             "description": "",
@@ -245,7 +245,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4702c6bd3d4b5b610983ec06b253a642",
+            "collectionId": "50dc24059ca35006f9e37ecc5a0ec8cf",
             "rawModeData": ""
         }
     ]
