@@ -1,5 +1,5 @@
 {
-    "id": "3a43c0048f78bc12e23df74c10083f1e",
+    "id": "8b8026778661e116f346e6d7b0376aee",
     "name": "WorkItemTracking",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b3b802b1ad84391b473d442398217c5e",
+            "id": "6c5e517ad1c62ef0e17b8bb80d922144",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/artifactlinktypes",
             "description": "Get the workItemTracking toolTypes outboundLinks of type WorkItem",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "7335282e72c8fd76dee308521afeb856",
+            "id": "1d712eca106f95e08490e39e73dfc887",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/artifacturiquery",
             "description": "Gets the results of the work item ids linked to the artifact uri",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "c094cb44747999f424a180697e2d828e",
+            "id": "dd8c6ada917a127452c01c715c9a0ab4",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/attachments",
             "description": "Uploads an attachment",
@@ -120,11 +120,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "22656437e9952e4e648ca831a174ffdc",
+            "id": "b3e41a56a7895868eae40971408e169f",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/attachments\/{id}",
             "description": "Downloads an attachment\n\n#### Sample code\n\n             *[C# (DownloadAttachment method)](https:\/\/github.com\/Microsoft\/vsts-dotnet-samples\/blob\/master\/ClientLibrary\/Snippets\/Microsoft.TeamServices.Samples.Client\/WorkItemTracking\/AttachmentsSample.cs#L69)",
@@ -165,11 +165,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "56ee3427fac916e74c1b63eb80a0a2af",
+            "id": "504d4a32a42f59f15119dd22d54e7d20",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/classificationnodes\/{structureGroup}\/{*path}",
             "description": "",
@@ -217,11 +217,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "7868e5a5a4007cab3b47e944a11066d4",
+            "id": "dda334b794b2c319f3fb32bfe1548c48",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/classificationnodes\/{structureGroup}\/{*path}",
             "description": "",
@@ -276,11 +276,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "d764776b737f5a4feafa890f460431c3",
+            "id": "a1c6d512ac45cd6f43634e3540a3d2f9",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/classificationnodes\/{structureGroup}\/{*path}",
             "description": "",
@@ -335,11 +335,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "0ab6eee4c9ad72d3b43f5ccdf4a053a9",
+            "id": "b06315cc953b6380f37779ad6e8dbc52",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/classificationnodes\/{structureGroup}\/{*path}",
             "description": "",
@@ -387,11 +387,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "d02db84563f8dea2446ceca201143899",
+            "id": "fcda8763655bc4b2ed252aa03d0753ef",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/classificationnodes",
             "description": "",
@@ -432,11 +432,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "3d8bfeaa2df0d33b430dbf104c670f53",
+            "id": "929b925b11ed15724a16478ab32f6f5c",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/workItems\/{id}\/comments\/{revision}",
             "description": "Returns comment for a work item at the specified revision",
@@ -477,11 +477,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "c60a0647ec847516c969bb4d2437b801",
+            "id": "84afd407a6b64cacbc2ae40f232254e2",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/wit\/workItems\/{id}\/comments",
             "description": "Returns specified number of comments for a work item from the specified revision",
@@ -536,11 +536,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "75c36b8a63d448717e35c0a41d6eb13b",
+            "id": "d50f5dce4865f3265a177e15b3b264d8",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/fields\/{fieldNameOrRefName}",
             "description": "",
@@ -581,11 +581,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "dd5f38c5e1156556ecf4297b2828d922",
+            "id": "53ae406f95cca57cef5fffc142fb6db0",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/fields\/{fieldNameOrRefName}",
             "description": "Gets information on a specific field.",
@@ -626,11 +626,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "4d466211cf798bfd828f720f1aabfa47",
+            "id": "2b7cf9228fa0183f82b3774d481e8bac",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/fields\/{fieldNameOrRefName}",
             "description": "",
@@ -671,11 +671,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "960c838f75e39d719fd38ef96a07ec83",
+            "id": "1d21652f44b9cbbf963366946e69b457",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/fields",
             "description": "Returns information for all fields.",
@@ -716,11 +716,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "32cfa70d0d4a9b228e9b87b7646dbc49",
+            "id": "629a359f350268abc8e6f31e5a5c7770",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/queries\/{query}",
             "description": "Creates a query, or moves a query.",
@@ -761,11 +761,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "77302bfe7be497136051491df6a9b409",
+            "id": "a47f8a891067430cbf2026399b883021",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/queries\/{query}",
             "description": "Delete a query or a folder",
@@ -806,11 +806,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         },
         {
-            "id": "675aa0b2a3984811949e0405d2c7cd84",
+            "id": "67ce6260630d9cb611d118278171f359",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/wit\/queries\/{query}",
             "description": "Retrieves an individual query and its children",
@@ -872,7 +872,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3a43c0048f78bc12e23df74c10083f1e",
+            "collectionId": "8b8026778661e116f346e6d7b0376aee",
             "rawModeData": ""
         }
     ]
