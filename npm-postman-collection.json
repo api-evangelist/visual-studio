@@ -1,5 +1,5 @@
 {
-    "id": "ce586819c6663ed4714e457c80ea514d",
+    "id": "dad2bdca389dc30a00946e7966302e3a",
     "name": "Npm",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "4dceeb3e364bfc034e07e98a5488aeec",
+            "id": "25bc1a1a4c6d221fe24a45bae550c99d",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/packaging\/feeds\/{feedId}\/npm\/packages\/@{packageScope}\/{unscopedPackageName}\/versions\/{packageVersion}\/content",
             "description": "",
@@ -65,11 +65,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce586819c6663ed4714e457c80ea514d",
+            "collectionId": "dad2bdca389dc30a00946e7966302e3a",
             "rawModeData": ""
         },
         {
-            "id": "0dc3a2176a699a6f8c0b0bed464269b7",
+            "id": "db07da71599f057f4908afc10ba2c031",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/packaging\/feeds\/{feedId}\/npm\/packages\/{packageName}\/versions\/{packageVersion}\/content",
             "description": "",
@@ -117,11 +117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce586819c6663ed4714e457c80ea514d",
+            "collectionId": "dad2bdca389dc30a00946e7966302e3a",
             "rawModeData": ""
         },
         {
-            "id": "6f6736b01bfa0b85e54d26474a877ab5",
+            "id": "b211fd2eb16465157db3b84709c40e52",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/packaging\/feeds\/{feedId}\/npm\/packagesbatch",
             "description": "Update several packages from a single feed in a single request. The updates to the packages do not happen atomically.",
@@ -155,11 +155,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce586819c6663ed4714e457c80ea514d",
+            "collectionId": "dad2bdca389dc30a00946e7966302e3a",
             "rawModeData": ""
         },
         {
-            "id": "3010c888b14e21794604d3dff2e74fb6",
+            "id": "e936387c53d6ac9f5727c795f5d675cf",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/packaging\/feeds\/{feedId}\/npm\/packages\/@{packageScope}\/{unscopedPackageName}\/versions\/{packageVersion}\/readme",
             "description": "",
@@ -214,11 +214,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce586819c6663ed4714e457c80ea514d",
+            "collectionId": "dad2bdca389dc30a00946e7966302e3a",
             "rawModeData": ""
         },
         {
-            "id": "5a393225d66a0107bd6d529c59142e58",
+            "id": "3615eb5cd5dd092e22938ed7440a20a1",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/packaging\/feeds\/{feedId}\/npm\/packages\/{packageName}\/versions\/{packageVersion}\/readme",
             "description": "",
@@ -266,11 +266,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce586819c6663ed4714e457c80ea514d",
+            "collectionId": "dad2bdca389dc30a00946e7966302e3a",
             "rawModeData": ""
         },
         {
-            "id": "df7602743d445458f72799f1a18836b3",
+            "id": "a545c46563b21de0aeca71fd5dabb8b9",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/packaging\/feeds\/{feedId}\/npm\/{packageName}\/versions\/{packageVersion}",
             "description": "",
@@ -318,11 +318,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce586819c6663ed4714e457c80ea514d",
+            "collectionId": "dad2bdca389dc30a00946e7966302e3a",
             "rawModeData": ""
         },
         {
-            "id": "58ae0696b4fe3339831db50b4ec6e63c",
+            "id": "7a4266c3c83adfcb11275e9a83ccf89c",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/packaging\/feeds\/{feedId}\/npm\/{packageName}\/versions\/{packageVersion}",
             "description": "",
@@ -370,11 +370,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce586819c6663ed4714e457c80ea514d",
+            "collectionId": "dad2bdca389dc30a00946e7966302e3a",
             "rawModeData": ""
         },
         {
-            "id": "2cb17a0fef192a71d8990a77b8576b92",
+            "id": "ec42ce87b46453c16e90169d5e2fc1ff",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/packaging\/feeds\/{feedId}\/npm\/{packageName}\/versions\/{packageVersion}",
             "description": "",
@@ -422,11 +422,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce586819c6663ed4714e457c80ea514d",
+            "collectionId": "dad2bdca389dc30a00946e7966302e3a",
             "rawModeData": ""
         },
         {
-            "id": "b194d0c778f3c32fd7542556675f1684",
+            "id": "b4ec9f7151e54f3af5984e32e6aa8832",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/packaging\/feeds\/{feedId}\/npm\/@{packageScope}\/{unscopedPackageName}\/versions\/{packageVersion}",
             "description": "",
@@ -481,11 +481,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce586819c6663ed4714e457c80ea514d",
+            "collectionId": "dad2bdca389dc30a00946e7966302e3a",
             "rawModeData": ""
         },
         {
-            "id": "e947d69d5c7b14fe463401fa7475635e",
+            "id": "046cfa852346e4ab228dfe4ba2d26b8b",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/packaging\/feeds\/{feedId}\/npm\/@{packageScope}\/{unscopedPackageName}\/versions\/{packageVersion}",
             "description": "",
@@ -540,11 +540,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce586819c6663ed4714e457c80ea514d",
+            "collectionId": "dad2bdca389dc30a00946e7966302e3a",
             "rawModeData": ""
         },
         {
-            "id": "30eac7ddc1e7c295ca4b8474b5ccd9a0",
+            "id": "191f89f573898ea6316b75f2ceb3a5ae",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/_apis\/packaging\/feeds\/{feedId}\/npm\/@{packageScope}\/{unscopedPackageName}\/versions\/{packageVersion}",
             "description": "",
@@ -599,7 +599,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce586819c6663ed4714e457c80ea514d",
+            "collectionId": "dad2bdca389dc30a00946e7966302e3a",
             "rawModeData": ""
         }
     ]
