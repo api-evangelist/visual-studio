@@ -1,5 +1,5 @@
 {
-    "id": "2d2f0c711cbbdd94af52e49c6a0025c1",
+    "id": "f105498d1b35f779137d278514980672",
     "name": "Build",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "bacfcdef83d5517e9a3fb0dfe9f9af94",
+            "id": "193969c9d9c28235d4f03a0730ad19f6",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/build\/builds\/{buildId}\/properties",
             "description": "Gets properties for a build.",
@@ -58,11 +58,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2d2f0c711cbbdd94af52e49c6a0025c1",
+            "collectionId": "f105498d1b35f779137d278514980672",
             "rawModeData": ""
         },
         {
-            "id": "6fc8b5b8dabc39dded094046f1bb3c3b",
+            "id": "08e389450c25f313ef476bb244c53074",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/build\/definitions\/{definitionId}\/properties",
             "description": "Gets properties for a definition.",
@@ -110,7 +110,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2d2f0c711cbbdd94af52e49c6a0025c1",
+            "collectionId": "f105498d1b35f779137d278514980672",
             "rawModeData": ""
         }
     ]
