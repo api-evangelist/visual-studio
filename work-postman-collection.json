@@ -1,5 +1,5 @@
 {
-    "id": "56aaa714ecbfc033afb657e3cf0187a2",
+    "id": "a0df90ee174ab4856eb4428a31221189",
     "name": "Work",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "ada2f24f074a9f673973a61dc357941b",
+            "id": "03c1afe41ecf5529bf9d87fef7080602",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/backlogconfiguration",
             "description": "",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "b5e2b29d21d3551136eeb9a2d6c7d0f3",
+            "id": "4e9be43129bd67d5a591f96c6e9b1518",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/boardcolumns",
             "description": "",
@@ -89,11 +89,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "d5edb654d88a0a36d94e5a274cc6cd96",
+            "id": "d4693ca80bc18e7b83f6d27d3d07425f",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{board}\/boardfiltersettings",
             "description": "",
@@ -141,11 +141,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "61950d60cf49309a0cae78588cf3b12b",
+            "id": "393629fb9fbf4bceef6676d7d57c7c42",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/boardrows",
             "description": "",
@@ -179,11 +179,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "59be313932c25c00463cfa442d70f7f0",
+            "id": "b588c9386e03719bb76c50f8c526fd9d",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{id}",
             "description": "Get board",
@@ -231,11 +231,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "177fcc7ea58386086ab21e16d024aa7c",
+            "id": "b576ee27499cbdbb85ae1acebc879463",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards",
             "description": "Get boards",
@@ -276,11 +276,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "4364292be5733768758be70b63267887",
+            "id": "2ca638b3f2dc6e4b70790d2b31a05d43",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{board}\/boardusersettings",
             "description": "",
@@ -328,11 +328,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "ca9eacefbb0e0f8a0594bd97acc6b40d",
+            "id": "b2d367139a991b8c550669bb9e830f4e",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations\/{iterationId}\/capacities",
             "description": "",
@@ -380,11 +380,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "861aa3282abb800b66ed4c83dc15eb69",
+            "id": "39b1197079b8605b5c52e39e6e61ced0",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{board}\/cardrulesettings",
             "description": "Get board card Rule settings for the board id or board by name",
@@ -432,11 +432,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "3ea1cb9cde13363eff5799052449af3a",
+            "id": "564c8256803fe917f8dbae1ad88d2f5f",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{board}\/cardsettings",
             "description": "Get board card settings for the board id or board by name",
@@ -484,11 +484,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "c788b6a0835dc6c6357f074dfb932c06",
+            "id": "8a422855f2e71256dfe31b92fb7ea797",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations\/{id}",
             "description": "",
@@ -536,11 +536,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "e59556f283b2a0211b2ec461f60c8f90",
+            "id": "15e139307133e6a16a48dae32443231f",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations\/{id}",
             "description": "",
@@ -588,11 +588,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "5b869d39c2e208596703226376afb98a",
+            "id": "0678f63dc70580b9a05c70f59b369530",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations",
             "description": "",
@@ -640,11 +640,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "7d74522c35a1563169c7973dac15e949",
+            "id": "2d051ea9b1364f98a1acd2efe4148579",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations",
             "description": "",
@@ -685,11 +685,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "f25ef4fa7a0084e87d798726b0616a08",
+            "id": "932d19d1e01d6e3ed2013ee5331bf833",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/plans",
             "description": "Add a new plan for the team",
@@ -723,11 +723,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "fc8e9492e534823a0fbe2b01392e502d",
+            "id": "5c56c570274ac9f84b5ccf8ae8e4525c",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/plans",
             "description": "Get the information for all the plans configured for the given team",
@@ -761,11 +761,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "f5c4e324c425ed9fdbc73b47c1a3b38a",
+            "id": "0913c15efaa40d534c281bd03f1cc127",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/plans\/{id}",
             "description": "Delete the specified plan",
@@ -806,11 +806,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "90da6f2107abc327a84d9642f7e6eb51",
+            "id": "71ab0db8a1f9a38053bda171dc0fb393",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/plans\/{id}",
             "description": "Get the information for the specified plan",
@@ -851,11 +851,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "e99b31c7ecdd95d490eb180639b1a78a",
+            "id": "8ca66ebd7bd2ac6f2a0cc19604e1f938",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/plans\/{id}",
             "description": "Update the information for the specified plan",
@@ -896,11 +896,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "4cd1cfd23aea1b2d6c8da71a4bcf01c9",
+            "id": "b72dd943cb0ec6cf5cd00a88021b3482",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/_apis\/work\/processconfiguration",
             "description": "",
@@ -934,11 +934,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "308365ce4f1aa5f0bfc483678be13927",
+            "id": "cf9984c5d767614badc95e9f982795c6",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/boards\/{board}\/rows",
             "description": "",
@@ -986,11 +986,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "21b123a96c3aafeb9b60725b3fcb40f2",
+            "id": "fbedccd59b3c0544f13e44fbe9c7a81f",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/iterations\/{iterationId}\/teamdaysoff",
             "description": "",
@@ -1038,11 +1038,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "26d5b614cee4b1cc0d2d56fb947bdc35",
+            "id": "4c7585b55cd8664c9d643e27e78ead17",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/teamfieldvalues",
             "description": "",
@@ -1083,11 +1083,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "c88dd2cb6bbf44e129793cf7dcc2178f",
+            "id": "21994bacfb5fe28300b0db06f4288c29",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings\/teamfieldvalues",
             "description": "",
@@ -1128,11 +1128,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "73c70c016208d463eac558ee9268d2f0",
+            "id": "1ae87e768a984dd39bd33c5c01c63023",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings",
             "description": "",
@@ -1173,11 +1173,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         },
         {
-            "id": "4bd0f45763904d1edb3a04d454e167e2",
+            "id": "3747867f8d1d84a263f31dd147e62180",
             "name": "",
             "url": "http:\/\/fabrikam-fiber-inc.visualstudio.com\/\/{project}\/{team}\/_apis\/work\/teamsettings",
             "description": "",
@@ -1218,7 +1218,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "56aaa714ecbfc033afb657e3cf0187a2",
+            "collectionId": "a0df90ee174ab4856eb4428a31221189",
             "rawModeData": ""
         }
     ]
