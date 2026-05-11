@@ -1,0 +1,74 @@
+aid: visual-studio
+name: Visual Studio
+description: >-
+  Microsoft Visual Studio is an integrated development environment (IDE) for
+  building applications across .NET, C++, web, mobile, cloud, and game
+  platforms on Windows and macOS. While the Visual Studio IDE itself is not
+  exposed as a SaaS REST API, Microsoft provides developer-facing APIs for
+  Live Share real-time collaboration (consumed via the vsls extension SDK) and
+  the Visual Studio Marketplace REST API for discovering and distributing
+  extensions, themes, and tools.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - IDE
+  - Developer Tools
+  - Microsoft
+  - Code Collaboration
+  - Marketplace
+  - Extensions
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/visual-studio/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: visual-studio:live-share-api
+    name: Visual Studio Live Share API
+    description: >-
+      Extension-facing API (via the vsls npm module) that allows other VS
+      Code and Visual Studio extensions to start, join, and end Live Share
+      collaborative sessions and expose shared RPC services to guests.
+    humanURL: https://visualstudio.microsoft.com/services/live-share
+    baseURL: https://www.npmjs.com/package/vsls
+    tags:
+      - Code Collaboration
+      - Pair Programming
+      - Extensions
+    properties:
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/visualstudio/liveshare/
+      - type: SDK
+        url: https://www.npmjs.com/package/vsls
+      - type: Marketplace
+        url: https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
+  - aid: visual-studio:marketplace-api
+    name: Visual Studio Marketplace API
+    description: >-
+      REST API for querying and retrieving Visual Studio and VS Code
+      extensions, publishers, versions, and assets from the Visual Studio
+      Marketplace.
+    humanURL: https://marketplace.visualstudio.com
+    baseURL: https://marketplace.visualstudio.com/_apis/public/gallery
+    tags:
+      - Marketplace
+      - Extensions
+      - Discovery
+    properties:
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/azure/devops/extend/publish/overview
+
+common:
+  - type: Website
+    url: https://visualstudio.microsoft.com
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/visualstudio
+  - type: Pricing
+    url: https://visualstudio.microsoft.com/vs/pricing
+  - type: Download
+    url: https://visualstudio.microsoft.com/downloads
+  - type: Marketplace
+    url: https://marketplace.visualstudio.com
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
