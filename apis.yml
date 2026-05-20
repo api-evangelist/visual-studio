@@ -59,6 +59,10 @@ apis:
         url: https://learn.microsoft.com/en-us/azure/devops/extend/publish/overview
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/microsoft
+  - type: LinkedIn
+    url: https://www.linkedin.com/showcase/microsoft-visual-studio
   - type: Website
     url: https://visualstudio.microsoft.com
   - type: Documentation
