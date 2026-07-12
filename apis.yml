@@ -59,6 +59,10 @@ apis:
         url: https://learn.microsoft.com/en-us/azure/devops/extend/publish/overview
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/visual-studio-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/visual-studio-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/microsoft
   - type: LinkedIn
@@ -73,6 +77,8 @@ common:
     url: https://visualstudio.microsoft.com/downloads
   - type: Marketplace
     url: https://marketplace.visualstudio.com
+  - url: https://devblogs.microsoft.com/visualstudio/feed/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
